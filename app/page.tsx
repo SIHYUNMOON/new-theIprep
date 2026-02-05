@@ -174,6 +174,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Max Joo</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -193,6 +194,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Monika Chang</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -214,6 +216,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Joe Shim</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -231,6 +234,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Grace</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -254,6 +258,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Evelyn Nam</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -278,6 +283,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">홍다인 (Gabrielle)</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -298,6 +304,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">한우리</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -316,6 +323,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">이선규 (Sean)</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -335,6 +343,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Aiden Song</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -355,6 +364,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Rita Obelleiro</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -375,6 +385,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">Michael Kim</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3"></p>
@@ -393,6 +404,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">김세준</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3"></p>
@@ -408,6 +420,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">강이원</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -426,6 +439,7 @@ export default function Page() {
             <Card className="fade-up border-none bg-white overflow-hidden">
               <div className="h-1 bg-primary" />
               <CardContent className="p-8">
+                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-2">이경은</h3>
                 <div className="h-px bg-border mb-1" />
                 <p className="text-sm text-foreground/60 mb-3">
@@ -472,7 +486,7 @@ export default function Page() {
               className="h-10 w-auto brightness-0 invert"
             />
           </div>
-          <div className="text-center text-sm space-y-2 opacity-90">
+          <div className="text-left text-sm space-y-2 opacity-90">
             <p className="leading-relaxed">
               The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
             </p>
