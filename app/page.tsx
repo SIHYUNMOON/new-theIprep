@@ -37,7 +37,6 @@ export default function Page() {
                 alt="The-I Prep Logo"
                 width={140}
                 height={40}
-                style={{ height: '2.5rem', width: 'auto' }}
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
