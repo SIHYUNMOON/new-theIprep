@@ -91,16 +91,16 @@ export default function Page() {
       </section>
 
       {/* How We Approach Section */}
-      <section className="py-24 px-6 bg-muted/30">
+      <section className="py-24 px-6 bg-primary">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="fade-up">
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-6 text-balance">
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-6 text-balance">
                 How we approach
                 <br />
                 consulting
               </h2>
-              <p className="text-lg text-foreground/80 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 디아이프렙은 단순한 정보를 제공하는 것을 넘어, 정직하고 투명한 방법으로 학생들에게 필요한 방향성과 전략을 제공하며, 장기적인 성과를 위한 컨설팅을 제공합니다. 디아이프렙은 사명감을 가지고 학생들과 함께합니다. 학생들이 꿈꾸는 미래를 현실로 만들 수 있도록 최선을 다하며, 지속 가능한 성공을 통해 글로벌 리더로 성장할 수 있도록 돕는 것을 목표로 합니다.
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function Page() {
                   학생 중심 프로그램
                 </h3>
                 <p className="text-white/90 leading-relaxed">
-                  저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 지난 10년 동안 500명 넘는 학생들과 함께한 성공적인 노하우와 데이터를 바탕으로 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 학생 개개인에 최적화된 컨설팅을 제공합니다.
+                  저희는 모든 학생이 고유한 배경과 목표를 ��지고 있음을 이해하고, 지난 10년 동안 500명 넘는 학생들과 함께한 성공적인 노하우와 데이터를 바탕으로 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 학생 개개인에 최적화된 컨설팅을 제공합니다.
                 </p>
               </CardContent>
             </Card>
@@ -164,19 +164,22 @@ export default function Page() {
       </section>
 
       {/* Consultant Team Section */}
-      <section id="consultants" className="py-24 px-6 bg-muted/30">
+      <section id="consultants" className="py-24 px-6 bg-primary">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center mb-16 fade-up">
             Consultant Team
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Max Joo */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Max Joo</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Max Joo</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : Consulting / College Essay
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>디아이프렙 총괄 원장</p>
@@ -187,12 +190,15 @@ export default function Page() {
             </Card>
 
             {/* Monika Chang */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Monika Chang</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Monika Chang</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>디아이프렙 총괄 원장</p>
@@ -205,12 +211,15 @@ export default function Page() {
             </Card>
 
             {/* Joe Shim */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Joe Shim</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Joe Shim</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : Consulting / College Essay / Competitions
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Harvard University, BA (Economics)</p>
@@ -219,12 +228,15 @@ export default function Page() {
             </Card>
 
             {/* Grace */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Grace</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Grace</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : Boarding School Consulting, Boarding School Advising Consulting
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>디아이프렙 보딩스쿨 원장</p>
@@ -239,12 +251,15 @@ export default function Page() {
             </Card>
 
             {/* Evelyn Nam */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Evelyn Nam</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Evelyn Nam</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College Consulting, College Essay, SAT Reading & Writing
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Cornell (BS, Industrial and Labor Relations)</p>
@@ -260,12 +275,15 @@ export default function Page() {
             </Card>
 
             {/* 홍다인 (Gabrielle) */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">홍다인 (Gabrielle)</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">홍다인 (Gabrielle)</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College Counselling, College Essay, Graduate School Consulting
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Duke University (B.A., Political Science)</p>
@@ -277,12 +295,15 @@ export default function Page() {
             </Card>
 
             {/* 한우리 */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">한우리</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">한우리</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College Consulting, Pre-Dental/ Pharm. School Consulting, EC Consulting, College Essay
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>University College of London, BSc (Information Management)</p>
@@ -292,12 +313,15 @@ export default function Page() {
             </Card>
 
             {/* 이선규 (Sean) */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">이선규 (Sean)</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">이선규 (Sean)</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College Consulting, College Essay, SAT Reading
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Emory University (BA, Philosophy)</p>
@@ -308,12 +332,15 @@ export default function Page() {
             </Card>
 
             {/* Aiden Song */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Aiden Song</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Aiden Song</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : Research Advisor, SAT Math, AP Calculus, Economics, Statistics
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>City University of New York, Ph.D. in Financial Economics</p>
@@ -325,12 +352,15 @@ export default function Page() {
             </Card>
 
             {/* Rita Obelleiro */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Rita Obelleiro</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Rita Obelleiro</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : Boarding School, College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>(전) Phillips Academy Andover, Teacher, Coach, Counselor</p>
@@ -342,10 +372,12 @@ export default function Page() {
             </Card>
 
             {/* Michael Kim */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">Michael Kim</h3>
-                <p className="text-sm text-muted-foreground mb-4"></p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Michael Kim</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3"></p>
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Cornell U. BA (Government)</p>
@@ -358,10 +390,12 @@ export default function Page() {
             </Card>
 
             {/* 김세준 */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">김세준</h3>
-                <p className="text-sm text-muted-foreground mb-4"></p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">김세준</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3"></p>
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>Holyname Catholic High School (메사추세츠) 졸업</p>
@@ -371,12 +405,15 @@ export default function Page() {
             </Card>
 
             {/* 강이원 */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">강이원</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">강이원</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : College Counselling, College Essay
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>인터프렙 SAT, AP English Lit. & Lang. 강의</p>
@@ -386,12 +423,15 @@ export default function Page() {
             </Card>
 
             {/* 이경은 */}
-            <Card className="fade-up border-border/50">
+            <Card className="fade-up border-none bg-white overflow-hidden">
+              <div className="h-1 bg-primary" />
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-primary mb-1">이경은</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-2">이경은</h3>
+                <div className="h-px bg-border mb-1" />
+                <p className="text-sm text-foreground/60 mb-3">
                   과목 : SAT Math/RW, IB Mathematics AA/AI SL, Japanese B SL/HL, Chemistry SL, Physics SL, MYP, AP Precalculus, AP Chemistry, AP Physics 1
                 </p>
+                <div className="h-px bg-border mb-4" />
                 <div className="space-y-1 text-sm text-foreground/80">
                   <p className="font-semibold mb-2">주요경력</p>
                   <p>New York University, BS (Mathematics)</p>
@@ -424,17 +464,29 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
-        <div className="container mx-auto max-w-7xl text-center">
-          <div className="flex justify-center mb-4">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex justify-center mb-6">
             <img
               src="/images/image.png"
               alt="The-I Prep Logo"
               className="h-10 w-auto brightness-0 invert"
             />
           </div>
-          <p className="text-sm opacity-90">
-            © 2024 The-I Prep. All rights reserved.
-          </p>
+          <div className="text-center text-sm space-y-2 opacity-90">
+            <p className="leading-relaxed">
+              The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
+            </p>
+            <p className="leading-relaxed">
+              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
+            </p>
+            <p className="leading-relaxed">
+              입금계좌 | 디아이파트너즈학원<br />
+              신한은행 140-012-951522
+            </p>
+            <p className="pt-2">
+              Copyright © The I Prep. ALL RIGHT RESERVED
+            </p>
+          </div>
         </div>
       </footer>
 
