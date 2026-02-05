@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
+import { AnimatedSection } from '@/components/animated-section'
 
 export default function Page() {
   const observerRef = useRef<IntersectionObserver | null>(null)
@@ -66,7 +67,7 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-6 min-h-[85vh] flex items-center fade-up">
+      <AnimatedSection className="relative pt-32 pb-24 px-6 min-h-[85vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-consulting.jpg"
@@ -88,10 +89,10 @@ export default function Page() {
             디아이프렙은 지난 10여 년간 강남 압구정과 대치동 일대에서 수천 명의 유학생들이 성공적으로 대학 진학의 꿈을 이루도록 도운 맥스 원장이 설립한 학원입니다.
           </p>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* How We Approach Section */}
-      <section className="py-24 px-6 bg-[rgb(236,236,244)] fade-up">
+      <AnimatedSection className="py-24 px-6 bg-[rgb(236,236,244)]">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="fade-up">
@@ -118,10 +119,10 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* About The-I Prep Section */}
-      <section className="py-24 px-6 fade-up">
+      <AnimatedSection className="py-24 px-6">
         <div className="container mx-auto max-w-7xl">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             About The-I Prep
@@ -144,7 +145,7 @@ export default function Page() {
                   전문 컨설턴트 팀
                 </h3>
                 <p className="text-white/90 leading-relaxed">
-                  ���스원장과 팀은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 저희는 컨설팅을 업무로 여기지 않으며, 학생들이 자신의 가능성을 발견하고 새로운 도전에 나설 수 있도록 돕는 변화의 과정의 멘토링이라 생각합니다.
+                  맥스원장과 팀은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 저희는 컨설팅을 업무로 여기지 않으며, 학생들이 자신의 가능성을 발견하고 새로운 도전에 나설 수 있도록 돕는 변화의 과정의 멘토링이라 생각합니다.
                 </p>
               </CardContent>
             </Card>
@@ -155,16 +156,16 @@ export default function Page() {
                   학생 중심 프로그램
                 </h3>
                 <p className="text-white/90 leading-relaxed">
-                  저희는 모든 ��생이 고유한 배경과 목표를 ��지고 있음을 이해하고, 지난 10년 동안 500명 넘는 학생들과 함께한 성공적인 노하우와 데이터를 바탕으로 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 학생 개개인에 최적화된 컨설팅을 제공합니다.
+                  저희는 모든 학생이 고유한 배경과 목표를 지고 있음을 이해하고, 지난 10년 동안 500명 넘는 학생들과 함께한 성공적인 노하우와 데이터를 바탕으로 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 학생 개개인에 최적화된 컨설팅을 제공합니다.
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Consultant Team Section */}
-      <section id="consultants" className="py-24 px-6 bg-[rgb(236,236,244)] fade-up">
+      <AnimatedSection id="consultants" className="py-24 px-6 bg-[rgb(236,236,244)]">
         <div className="container mx-auto max-w-7xl">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             Consultant Team
@@ -428,10 +429,10 @@ export default function Page() {
             </Card>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* YouTube Section */}
-      <section className="py-24 px-6 fade-up">
+      <AnimatedSection className="py-24 px-6">
         <div className="container mx-auto max-w-5xl">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             The-I Prep Youtube
@@ -448,7 +449,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Footer */}
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
