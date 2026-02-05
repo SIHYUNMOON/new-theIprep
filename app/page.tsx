@@ -66,7 +66,7 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-6 min-h-[70vh] flex items-center">
+      <section className="relative pt-32 pb-24 px-6 min-h-[85vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-consulting.jpg"
@@ -105,12 +105,12 @@ export default function Page() {
               </p>
             </div>
             <div className="fade-up flex justify-center lg:justify-end">
-              <div className="relative w-64 h-80 rounded-lg overflow-hidden">
+              <div className="relative w-full max-w-md aspect-[3/4] lg:aspect-[2/3]">
                 <Image
                   src="/images/maxjoo.png"
                   alt="Max Joo - Director"
                   fill
-                  className="object-cover"
+                  className="object-contain object-bottom"
                   loading="eager"
                   priority
                 />
@@ -127,7 +127,7 @@ export default function Page() {
             About The-I Prep
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="fade-up border-none hover:shadow-lg transition-shadow bg-[#2c3e5e]">
+            <Card className="fade-up border-none hover:shadow-lg transition-shadow bg-[#5a6a84]">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   비전
