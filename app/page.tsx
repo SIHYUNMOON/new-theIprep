@@ -66,15 +66,25 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6">
-        <div className="container mx-auto max-w-4xl text-center fade-up">
-          <h1 className="font-serif text-5xl md:text-7xl font-light text-primary mb-8 text-balance">
+      <section className="relative pt-32 pb-24 px-6 min-h-[70vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-consulting.jpg"
+            alt="Consulting"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        <div className="container mx-auto max-w-4xl text-center fade-up relative z-10">
+          <h1 className="font-serif text-5xl md:text-7xl font-light text-white mb-8 text-balance">
             The-I Prep
             <br />
             Consulting
           </h1>
-          <div className="w-24 h-px bg-primary/20 mx-auto mb-8" />
-          <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+          <div className="w-24 h-px bg-white/40 mx-auto mb-8" />
+          <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
             디아이프렙은 지난 10여 년간 강남 압구정과 대치동 일대에서 수천 명의 유학생들이 성공적으로 대학 진학의 꿈을 이루도록 도운 맥스 원장이 설립한 학원입니다.
           </p>
         </div>

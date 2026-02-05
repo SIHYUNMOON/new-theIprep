@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
-        serif: ['var(--font-cormorant)', 'serif'],
+        serif: ['var(--font-playfair)', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
