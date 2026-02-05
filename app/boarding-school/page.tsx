@@ -80,20 +80,20 @@ export default function BoardingSchoolPage() {
             <div className="absolute inset-0 backdrop-blur-[2px]" style={{ maskImage: 'radial-gradient(ellipse at center, transparent 30%, black 70%)' }} />
           </div>
           
-          <div className="w-full px-6 md:px-12 pb-20 relative z-10">
-            <div className="text-white space-y-6 max-w-3xl">
-              <h1 className="font-serif text-5xl md:text-7xl font-semibold text-balance leading-tight">
+          <div className="container mx-auto px-6 pb-16 relative z-10">
+            <div className="text-white space-y-4 max-w-2xl">
+              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight">
                 Boarding school
                 <br />
                 Consulting
               </h1>
-              <div className="w-24 h-px bg-white/40" />
-              <h2 className="text-2xl md:text-3xl font-medium text-balance">
+              <div className="w-20 h-px bg-white/40" />
+              <h2 className="text-xl md:text-2xl font-medium text-balance">
                 미국 사립고로 가는 첫 걸음,
                 <br />
                 디아이프렙
               </h2>
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl">
                 Phillips Exeter 및 상위 10 보딩스쿨 합격을 이끈 검증된 성공 기록, 경쟁이 치열한 탑보딩스쿨 입시를 위한 탁월한 컨설팅 제공
               </p>
             </div>
@@ -155,83 +155,74 @@ export default function BoardingSchoolPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Senior Boarding */}
-              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
-                    명문 시니어 보딩 컨설팅
-                  </h3>
-                  <div className="space-y-3">
-                    <p className="text-foreground/80 font-medium">대상: 9 학년, 10 학년 학생</p>
-                    <ul className="space-y-2 text-foreground/70">
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Premium</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Deluxe</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Light</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>전학</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>탑 예술 보딩</span>
-                      </li>
-                    </ul>
-                  </div>
+              <div className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                  명문 시니어 보딩 컨설팅
+                </h3>
+                <div className="space-y-3 flex-1">
+                  <p className="text-white/90 font-medium">대상: 9 학년, 10 학년 학생</p>
+                  <ul className="space-y-2 text-white/80">
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Premium</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Deluxe</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Light</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>전학</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>탑 예술 보딩</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
               {/* Junior Boarding */}
-              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
-                    주니어 보딩 컨설팅
-                  </h3>
-                  <div className="space-y-3">
-                    <p className="text-foreground/80 font-medium">대상: 6 학년, 7 학년, 8 학년 학생</p>
-                    <ul className="space-y-2 text-foreground/70">
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Premium</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Deluxe</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Light</span>
-                      </li>
-                    </ul>
-                  </div>
+              <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                  주니어 보딩 컨설팅
+                </h3>
+                <div className="space-y-3 flex-1">
+                  <p className="text-white/90 font-medium">대상: 6 학년, 7 학년, 8 학년 학생</p>
+                  <ul className="space-y-2 text-white/80">
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Premium</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Deluxe</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Light</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
               {/* Advising */}
-              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
-                    보딩스쿨 어드바이징 컨설팅
-                  </h3>
-                  <div className="space-y-3">
-                    <p className="text-foreground/80 font-medium">대상: 7학년 - 10 학년 보딩스쿨 재학생</p>
-                    <ul className="space-y-2 text-foreground/70">
-                      <li className="flex items-center gap-2">
-                        <span className="text-[rgb(13,37,99)]">+</span>
-                        <span>Advising Consulting</span>
-                      </li>
-                    </ul>
-                  </div>
+              <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                  보딩스쿨 어드바이징 컨설팅
+                </h3>
+                <div className="space-y-3 flex-1">
+                  <p className="text-white/90 font-medium">대상: 7학년 - 10 학년 보딩스쿨 재학생</p>
+                  <ul className="space-y-2 text-white/80">
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>Advising Consulting</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
