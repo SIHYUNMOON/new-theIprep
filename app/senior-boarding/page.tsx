@@ -29,11 +29,11 @@ export default function SeniorBoardingPage() {
                   보딩스쿨 컨설팅
                 </a>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-white border border-border rounded-lg shadow-lg py-2 min-w-[180px]">
-                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Senior Boarding
                     </a>
-                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Junior Boarding
                     </a>
                   </div>
@@ -332,7 +332,7 @@ export default function SeniorBoardingPage() {
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                   </svg>
-                  <span>에세이 준비</span>
+                  <span>���세이 준비</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
                   전학 지원 에세이는 현재의 학교 경험과 새로운 학교에서의 목표를 효과적으로 전달해야 합니다. 학생의 스토리를 부각할 수 있도록 전문적인 피드백과 지도를 제공합니다.

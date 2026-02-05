@@ -51,11 +51,11 @@ export default function Page() {
                   보딩스쿨 컨설팅
                 </a>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-white border border-border rounded-lg shadow-lg py-2 min-w-[180px]">
-                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Senior Boarding
                     </a>
-                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Junior Boarding
                     </a>
                   </div>

@@ -50,11 +50,11 @@ export default function BoardingSchoolPage() {
                   보딩스쿨 컨설팅
                 </a>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-white border border-border rounded-lg shadow-lg py-2 min-w-[180px]">
-                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Senior Boarding
                     </a>
-                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
                       Junior Boarding
                     </a>
                   </div>
@@ -154,7 +154,7 @@ export default function BoardingSchoolPage() {
                     포괄적인 서비스
                   </h3>
                   <p className="text-foreground/80 leading-relaxed">
-                    저희는 입시 과정 전반에 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 보딩스쿨을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 보딩스쿨 입시를 준비할 수 있도록 최선을 다하고 있습니다.
+                    저희는 입시 과정 전��에 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 보딩스쿨을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 보딩스쿨 입시를 준비할 수 있도록 최선을 다하고 있습니다.
                   </p>
                 </div>
               </div>
@@ -257,6 +257,51 @@ export default function BoardingSchoolPage() {
                   allowFullScreen
                 />
               </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="mt-16 flex flex-wrap justify-center gap-8 fade-up">
+              <a
+                href="https://blog.naver.com/the-i-partners"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-3 group"
+              >
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#03C75A] group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+                    <path d="M12 6.75c-2.9 0-5.25 2.35-5.25 5.25S9.1 17.25 12 17.25s5.25-2.35 5.25-5.25S14.9 6.75 12 6.75zm0 8.5c-1.795 0-3.25-1.455-3.25-3.25S10.205 8.75 12 8.75s3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-foreground">블로그</span>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@the-iprep9895"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-3 group"
+              >
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#FF0000] group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-9 h-9 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-foreground">유튜브</span>
+              </a>
+
+              <a
+                href="#"
+                className="flex flex-col items-center gap-3 group cursor-pointer"
+              >
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#FEE500] group-hover:scale-110 transition-transform shadow-lg">
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3Z" fill="#3C1E1E"/>
+                    <path d="M10.5 8.67023L14.7 11.5954C15.1 11.8577 15.1 12.4724 14.7 12.7347L10.5 15.6599C10.1 15.9222 9.6 15.6349 9.6 15.1103V9.25983C9.6 8.73525 10.1 8.44795 10.5 8.67023Z" fill="#FEE500"/>
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-foreground">카카오 상담</span>
+              </a>
             </div>
           </div>
         </AnimatedSection>
