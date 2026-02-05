@@ -39,7 +39,7 @@ export default function SeniorBoardingPage() {
                   </div>
                 </div>
               </div>
-              <a href="/#college" className="hover:text-primary transition-colors">
+              <a href="/college" className="hover:text-primary transition-colors">
                 대학교 컨설팅
               </a>
               <a href="/#transfer" className="hover:text-primary transition-colors">
@@ -69,7 +69,7 @@ export default function SeniorBoardingPage() {
             />
             <div className="absolute inset-0 bg-black/30" />
           </div>
-          
+
           <div className="relative z-10">
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center text-balance">
               Senior Boarding
@@ -278,10 +278,10 @@ export default function SeniorBoardingPage() {
         {/* Transfer Consulting */}
         <AnimatedSection className="py-24 px-6">
           <div className="container mx-auto max-w-6xl">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
-              보딩스쿨 전학 컨설팅 프로그램 (Boarding School Transfer Consulting)
-            </h2>
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
+                보딩스쿨 전학 컨설팅 프로그램 (Boarding School Transfer Consulting)
+              </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
                 <span className="text-[rgb(13,37,99)] font-semibold">보딩스쿨 전학 프로그램</span>은 상위 5개 명문 보딩스쿨로의 전학을 목표로 하는 학생들을 위해 설계되었습니다. 이 프로그램은 전학 과정에서 필수적인 강력한 학업 기록, 과외 활동, 추천서, 인터뷰 준비를 체계적으로 지원하며, 학생들이 새로운 학교에서 성공적으로 적응하고 두각을 나타낼 수 있도록 돕습니다.
               </p>
@@ -364,12 +364,12 @@ export default function SeniorBoardingPage() {
         {/* TOP Art Boarding */}
         <AnimatedSection className="py-24 px-6">
           <div className="container mx-auto max-w-6xl">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
-              TOP 예술 보딩
-            </h2>
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
+                Change to TOP 예술 보딩
+              </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                미국 명문 예술 보딩스쿨 입시는 뛰어난 학업기록과 추천서 이외 <span className="text-[rgb(13,37,99)] font-semibold">포트폴리오와 창의적 스토리텔링이 핵심 요소</span>입니다. 디아이프렙의 <span className="text-[rgb(13,37,99)] font-semibold">명문 예술 보딩 컨설팅 프로그램은 포트폴리오 컨설팅</span>과 포트폴리오의 스토리와 맞는 <span className="text-[rgb(13,37,99)] font-semibold">artist statement 그리고 work description컨설팅</span>을 결합한 타 미술 유학원과 차별화되는 all-inclusive 프로그램으로, 학생이 자신의 예술적 비전을 명확하게 전달할 수 있도록 모든 요소를 지원합니다.
+                미국 명문 예술 보딩스쿨 입시는 뛰어난 학업기록과 추천서 이외 <span className="text-[rgb(13,37,99)] font-semibold">포트폴리���와 창의적 스토리텔링이 핵심 요소</span>입니다. 디아이프렙의 <span className="text-[rgb(13,37,99)] font-semibold">명문 예술 보딩 컨설팅 프로그램은 포트폴리오 컨설팅</span>과 포트폴리오의 스토리와 맞는 <span className="text-[rgb(13,37,99)] font-semibold">artist statement 그리고 work description컨설팅</span>을 결합한 타 미술 유학원과 차별화되는 all-inclusive 프로그램으로, 학생이 자신의 예술적 비전을 명확하게 전달할 수 있도록 모든 요소를 지원합니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>

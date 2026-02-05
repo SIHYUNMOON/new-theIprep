@@ -61,7 +61,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <a href="#college" className="hover:text-primary transition-colors">
+              <a href="/college" className="hover:text-primary transition-colors">
                 대학교 컨설팅
               </a>
               <a href="#transfer" className="hover:text-primary transition-colors">

@@ -1,30 +1,9 @@
 'use client'
 
-import { useEffect } from 'react'
 import Image from 'next/image'
 import { AnimatedSection } from '@/components/animated-section'
 
-export default function BoardingSchoolPage() {
-  useEffect(() => {
-    const fadeUpElements = document.querySelectorAll('.fade-up')
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-up-active')
-          }
-        })
-      },
-      {
-        threshold: 0.1,
-      }
-    )
-
-    fadeUpElements.forEach((el) => observer.observe(el))
-
-    return () => observer.disconnect()
-  }, [])
-
+export default function CollegePage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -83,7 +62,7 @@ export default function BoardingSchoolPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/boarding-hero.jpg"
-              alt="Boarding School Consulting"
+              alt="College Consulting"
               fill
               className="object-cover"
               priority
@@ -95,68 +74,71 @@ export default function BoardingSchoolPage() {
           <div className="container mx-auto px-6 pb-16 relative z-10">
             <div className="text-white space-y-4 max-w-2xl">
               <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight">
-                Boarding school
-                <br />
-                Consulting
+                College Consulting
               </h1>
               <div className="w-20 h-px bg-white/40" />
               <h2 className="text-xl md:text-2xl font-medium text-balance">
-                미국 사립고로 가는 첫 걸음,
+                미국 명문대학으로 가는 첫 걸음,
                 <br />
                 디아이프렙
               </h2>
               <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl">
-                Phillips Exeter 및 상위 10 보딩스쿨 합격을 이끈 검증된 성공 기록, 경쟁이 치열한 탑보딩스쿨 입시를 위한 탁월한 컨설팅 제공
+                Ivy League 및 상위 20개 대학 합격을 이끈 검증된 성공 기록, 경쟁이 치열한 미국 대학 입시를 위한 탁월한 컨설팅 제공
               </p>
             </div>
           </div>
         </AnimatedSection>
 
         {/* Why Us Section */}
-        <AnimatedSection className="py-24 px-6 bg-[rgb(236,236,244)]">
+        <AnimatedSection className="bg-[rgb(236,236,244)] py-24 px-6">
           <div className="container mx-auto max-w-6xl">
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
               Why us?
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {/* Card 1 */}
-              <div className="fade-up bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    검증된 성공률
-                  </h3>
-                  <p className="text-foreground/80 leading-relaxed">
-                    다년간의 경험을 바탕으로 500명 이상의 학생들이 자신에게 맞는 학교에 입학하여 꿈을 이룰 수 있도록 도왔습니다. 단순히 합격을 목표로 하는게 아니라, 학생 개개인과 잘 어울리는 드림스쿨을 찾을 수 있도록 맞춤형 컨설팅을 제공합니다.
-                  </p>
-                </div>
+              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg p-8">
+                <div className="h-1 bg-[rgb(13,37,99)] mb-6 w-16" />
+                <h3 className="text-2xl font-semibold text-primary mb-4">
+                  검증된 성공률
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  저희는 90% 이상의 학생들이 dream school 에 합격하는 놀라운 성과를 기록하고 있으며, Harvard, Stanford, MIT를 포함한 세계적인 명문 대학에 성공적으로 진학시켜 왔습니다. 이러한 성공률은 디아이프렙의 탁월한 전문성과 입시 프로세스에 대한 깊은 이해를 증명합니다.
+                </p>
               </div>
 
               {/* Card 2 */}
-              <div className="fade-up bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    전문 컨설턴트 팀
-                  </h3>
-                  <p className="text-foreground/80 leading-relaxed">
-                    Grace 원장과 컨설턴트 팀은 미국유명 보딩스쿨 출신 졸업생, 전직 입학 담당자 및 교육자들로 구성되어 있습니다. 함께 축적된 경험과 전문성을 바탕으로 학생들을 성공적인 입학과 그 이상의 여정으로 이끌어갑니다. 저희 팀은 모두 유학생 출신으로, 학생들이 미국 보딩 스쿨 시스템에 적응하고 성공할 수 있도록 돕는데 특화 되었습니다.
-                  </p>
-                </div>
+              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg p-8">
+                <div className="h-1 bg-[rgb(13,37,99)] mb-6 w-16" />
+                <h3 className="text-2xl font-semibold text-primary mb-4">
+                  맞춤형 접근
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 이를 바탕으로 개별화된 전략을 제공합니다. 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 맞춤형 계획을 설계합니다.
+                </p>
               </div>
 
               {/* Card 3 */}
-              <div className="fade-up bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                <div className="h-1 bg-[rgb(13,37,99)]" />
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    포괄적인 서비스
-                  </h3>
-                  <p className="text-foreground/80 leading-relaxed">
-                    저희는 입시 과정 전반에 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 보딩스쿨을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 보딩스쿨 입시를 준비할 수 있도록 최선을 다하고 있습니다.
-                  </p>
-                </div>
+              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg p-8">
+                <div className="h-1 bg-[rgb(13,37,99)] mb-6 w-16" />
+                <h3 className="text-2xl font-semibold text-primary mb-4">
+                  전문 컨설턴트 팀
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  저희의 컨설턴트 팀은 Harvard, Columbia 등 Ivy League 급 출신 졸업생들과 컨설팅에만 전념하는 전문가들로 구성되어 있습니다. 이들은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 다양한 배경과 전문성을 갖춘 컨설턴트 팀은 학생들이 입시 경쟁에서 두각을 나타낼 수 있도록 최상의 지원을 제공합니다.
+                </p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="fade-up bg-white border-none hover:shadow-lg transition-shadow rounded-lg p-8">
+                <div className="h-1 bg-[rgb(13,37,99)] mb-6 w-16" />
+                <h3 className="text-2xl font-semibold text-primary mb-4">
+                  포괄적인 서비스
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  저희는 입시 과정 전반에 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 대학을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 대학 입시를 준비할 수 있도록 최선을 다하고 있습니다.
+                </p>
               </div>
             </div>
           </div>
@@ -165,14 +147,17 @@ export default function BoardingSchoolPage() {
         {/* Programs Section */}
         <AnimatedSection className="py-24 px-6">
           <div className="container mx-auto max-w-6xl">
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
+              Programs
+            </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Senior Boarding */}
-              <a href="/senior-boarding" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
+              {/* College Consulting */}
+              <div className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
-                  명문 시니어 보딩 컨설팅
+                  대학 컨설팅
                 </h3>
                 <div className="space-y-3 flex-1">
-                  <p className="text-white/90 font-medium">대상: 9 학년, 10 학년 학생</p>
+                  <p className="text-white/90 font-medium">대상: 예비 11학년</p>
                   <ul className="space-y-2 text-white/80">
                     <li className="flex items-center gap-2">
                       <span>+</span>
@@ -184,55 +169,67 @@ export default function BoardingSchoolPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>Light</span>
+                      <span>Essay Only</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>전학</span>
+                      <span>미대</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>탑 예술 보딩</span>
+                      <span>편입</span>
                     </li>
                   </ul>
                 </div>
-              </a>
+              </div>
 
-              {/* Junior Boarding */}
-              <a href="/junior-boarding" className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
+              {/* Mentoring */}
+              <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
-                  주니어 보딩 컨설팅
+                  멘토링 컨설팅
                 </h3>
                 <div className="space-y-3 flex-1">
-                  <p className="text-white/90 font-medium">대상: 6 학년, 7 학년, 8 학년 학생</p>
+                  <p className="text-white/90 font-medium">대상: 7학년 – 10 학년 학생</p>
                   <ul className="space-y-2 text-white/80">
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>Premium</span>
+                      <span>주니어 멘토링</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>Deluxe</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span>+</span>
-                      <span>Light</span>
+                      <span>시니어 멘토링</span>
                     </li>
                   </ul>
                 </div>
-              </a>
+              </div>
 
-              {/* Advising */}
+              {/* EC Consulting */}
               <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
-                  보딩스쿨 어드바이징 컨설팅
+                  EC 컨설팅
                 </h3>
                 <div className="space-y-3 flex-1">
-                  <p className="text-white/90 font-medium">대상: 7학년 - 10 학년 보딩스쿨 재학생</p>
+                  <p className="text-white/90 font-medium">대상: 8학년 2학기 학생 - 12 학년 학생</p>
                   <ul className="space-y-2 text-white/80">
                     <li className="flex items-center gap-2">
                       <span>+</span>
-                      <span>Advising Consulting</span>
+                      <span>대회 & 연구</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>써머스쿨/ 프로그램 원서</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>인턴십</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>아트 포트폴리오</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span>+</span>
+                      <span>아트 포트폴리오 부트 캠프</span>
                     </li>
                   </ul>
                 </div>
@@ -247,15 +244,28 @@ export default function BoardingSchoolPage() {
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
               The-I Prep TV
             </h2>
-            <div className="fade-up max-w-4xl mx-auto">
-              <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/UGjYeSzUhGc"
-                  title="The-I Prep TV"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="fade-up">
+                <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/6kZ1XNO-coE"
+                    title="The-I Prep TV Video 1"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <div className="fade-up">
+                <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/PMWr0ajhEL0"
+                    title="The-I Prep TV Video 2"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </div>
           </div>
