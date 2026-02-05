@@ -37,7 +37,7 @@ export default function Page() {
                 alt="The-I Prep Logo"
                 width={140}
                 height={40}
-                className="h-10 w-auto"
+                style={{ height: '2.5rem', width: 'auto' }}
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -103,6 +103,8 @@ export default function Page() {
                   alt="Max Joo - Director"
                   fill
                   className="object-cover"
+                  loading="eager"
+                  priority
                 />
               </div>
             </div>
@@ -420,7 +422,8 @@ export default function Page() {
             alt="The-I Prep Logo"
             width={140}
             height={40}
-            className="h-10 w-auto mx-auto mb-4 brightness-0 invert"
+            style={{ height: '2.5rem', width: 'auto' }}
+            className="mx-auto mb-4 brightness-0 invert"
           />
           <p className="text-sm opacity-90">
             © 2024 The-I Prep. All rights reserved.
