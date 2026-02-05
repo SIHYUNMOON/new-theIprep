@@ -172,261 +172,300 @@ export default function Page() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Max Joo */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Max Joo</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : Consulting / College Essay
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Max Joo</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>
+                  Consulting / College Essay
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>디아이프렙 총괄 원장</p>
-                  <p>Columbia University, Law School 졸업</p>
-                  <p>Washington College of Law, phD</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">디아이프렙 총괄 원장</p>
+                  <p className="text-sm text-foreground leading-snug">Columbia University, Law School 졸업</p>
+                  <p className="text-sm text-foreground leading-snug">Washington College of Law, phD</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Monika Chang */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Monika Chang</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Monika Chang</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>디아이프렙 총괄 원장</p>
-                  <p>MICA (BFA, Painting)</p>
-                  <p>(전) 해커스 GRE 강사, 컨설팅 디렉터</p>
-                  <p>(전) 에세이라인, 원장</p>
-                  <p>(전) 아이비라인, 부원장</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">디아이프렙 총괄 원장</p>
+                  <p className="text-sm text-foreground leading-snug">MICA (BFA, Painting)</p>
+                  <p className="text-sm text-foreground leading-snug">(전) 해커스 GRE 강사, 컨설팅 디렉터</p>
+                  <p className="text-sm text-foreground leading-snug">(전) 에세이라인, 원장</p>
+                  <p className="text-sm text-foreground leading-snug">(전) 아이비라인, 부원장</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Joe Shim */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Joe Shim</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : Consulting / College Essay / Competitions
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Joe Shim</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>Consulting / College Essay / Competitions
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Harvard University, BA (Economics)</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Harvard University, BA (Economics)</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Grace */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Grace</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : Boarding School Consulting, Boarding School Advising Consulting
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Grace</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>Boarding School Consulting, Boarding School Advising Consulting
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>디아이프렙 보딩스쿨 원장</p>
-                  <p>University of Texas, Austin (BA, Economics)</p>
-                  <p>(전) CBIS K 교무처장</p>
-                  <p>(전) Little School 부원장</p>
-                  <p>(전)토스잉글리시 원장</p>
-                  <p>(전)애임플러스 교육 유학컨설팅 과장</p>
-                  <p>(전)세이스 유학 컨설턴트</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">디아이프렙 보딩스쿨 원장</p>
+                  <p className="text-sm text-foreground leading-snug">University of Texas, Austin (BA, Economics)</p>
+                  <p className="text-sm text-foreground leading-snug">(전) CBIS K 교무처장</p>
+                  <p className="text-sm text-foreground leading-snug">(전) Little School 부원장</p>
+                  <p className="text-sm text-foreground leading-snug">(전)토스잉글리시 원장</p>
+                  <p className="text-sm text-foreground leading-snug">(전)애임플러스 교육 유학컨설팅 과장</p>
+                  <p className="text-sm text-foreground leading-snug">(전)세이스 유학 컨설턴트</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Evelyn Nam */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Evelyn Nam</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College Consulting, College Essay, SAT Reading & Writing
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Evelyn Nam</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College Consulting, College Essay, SAT Reading & Writing
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Cornell (BS, Industrial and Labor Relations)</p>
-                  <p>Harvard University, MA (Theological Studies)</p>
-                  <p>Harvard University, Kennedy School, MPA (Public Administration)</p>
-                  <p>Columbia University, MS (Business Journalism)</p>
-                  <p>(전) Crimson Education, 컨설턴트</p>
-                  <p>(전) 아주경제, 리포터</p>
-                  <p>(전)블룸버그, localization data specialist</p>
-                  <p>(전)하버드 비즈니스 리뷰, staff writer</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Cornell (BS, Industrial and Labor Relations)</p>
+                  <p className="text-sm text-foreground leading-snug">Harvard University, MA (Theological Studies)</p>
+                  <p className="text-sm text-foreground leading-snug">Harvard University, Kennedy School, MPA (Public Administration)</p>
+                  <p className="text-sm text-foreground leading-snug">Columbia University, MS (Business Journalism)</p>
+                  <p className="text-sm text-foreground leading-snug">(전) Crimson Education, 컨설턴트</p>
+                  <p className="text-sm text-foreground leading-snug">(전) 아주경제, 리포터</p>
+                  <p className="text-sm text-foreground leading-snug">(전)블룸버그, localization data specialist</p>
+                  <p className="text-sm text-foreground leading-snug">(전)하버드 비즈니스 리뷰, staff writer</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 홍다인 (Gabrielle) */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">홍다인 (Gabrielle)</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College Counselling, College Essay, Graduate School Consulting
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">홍다인 (Gabrielle)</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College Counselling, College Essay, Graduate School Consulting
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Duke University (B.A., Political Science)</p>
-                  <p>(현) Arirang TV, Global Broadcaster</p>
-                  <p>(전) Morgan Stanley, Summer Analyst</p>
-                  <p>(전) Law Firm Manhattan, Paralegal</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Duke University (B.A., Political Science)</p>
+                  <p className="text-sm text-foreground leading-snug">(현) Arirang TV, Global Broadcaster</p>
+                  <p className="text-sm text-foreground leading-snug">(전) Morgan Stanley, Summer Analyst</p>
+                  <p className="text-sm text-foreground leading-snug">(전) Law Firm Manhattan, Paralegal</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 한우리 */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">한우리</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College Consulting, Pre-Dental/ Pharm. School Consulting, EC Consulting, College Essay
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">한우리</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College Consulting, Pre-Dental/ Pharm. School Consulting, EC Consulting, College Essay
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>University College of London, BSc (Information Management)</p>
-                  <p>영국 Concord College 보딩스쿨</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">University College of London, BSc (Information Management)</p>
+                  <p className="text-sm text-foreground leading-snug">영국 Concord College 보딩스쿨</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 이선규 (Sean) */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">이선규 (Sean)</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College Consulting, College Essay, SAT Reading
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">이선규 (Sean)</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College Consulting, College Essay, SAT Reading
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Emory University (BA, Philosophy)</p>
-                  <p>Emory University, Laney Graduate School ( MA, Bioethics)</p>
-                  <p>(전)인사이트 강남 컨설팅, 에세이스트</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Emory University (BA, Philosophy)</p>
+                  <p className="text-sm text-foreground leading-snug">Emory University, Laney Graduate School ( MA, Bioethics)</p>
+                  <p className="text-sm text-foreground leading-snug">(전)인사이트 강남 컨설팅, 에세이스트</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Aiden Song */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Aiden Song</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : Research Advisor, SAT Math, AP Calculus, Economics, Statistics
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Aiden Song</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>Research Advisor, SAT Math, AP Calculus, Economics, Statistics
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>City University of New York, Ph.D. in Financial Economics</p>
-                  <p>(현) Lehman College, Faculty</p>
-                  <p>(현) New York University, Instructor</p>
-                  <p>(전) Columbia University, Instructor</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">City University of New York, Ph.D. in Financial Economics</p>
+                  <p className="text-sm text-foreground leading-snug">(현) Lehman College, Faculty</p>
+                  <p className="text-sm text-foreground leading-snug">(현) New York University, Instructor</p>
+                  <p className="text-sm text-foreground leading-snug">(전) Columbia University, Instructor</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Rita Obelleiro */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Rita Obelleiro</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : Boarding School, College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Rita Obelleiro</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>Boarding School, College, Transfer, Graduate School Consulting, College Essay, Art Portfolio Consulting
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>(전) Phillips Academy Andover, Teacher, Coach, Counselor</p>
-                  <p>University of Pennsylvania, MFA (Painting)</p>
-                  <p>SAIC, MAT (Art Education)</p>
-                  <p>MICA, BFA (Painting)</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">(전) Phillips Academy Andover, Teacher, Coach, Counselor</p>
+                  <p className="text-sm text-foreground leading-snug">University of Pennsylvania, MFA (Painting)</p>
+                  <p className="text-sm text-foreground leading-snug">SAIC, MAT (Art Education)</p>
+                  <p className="text-sm text-foreground leading-snug">MICA, BFA (Painting)</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Michael Kim */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">Michael Kim</h3>
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">Michael Kim</h3>
+              <div className="mb-4">
                 <p className="text-sm text-foreground/60 mb-4"></p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Cornell U. BA (Government)</p>
-                  <p>Stony Brook U. MBA</p>
-                  <p>Brooklyn Law School</p>
-                  <p>실리콘밸리 (삼성전자/Various Venture Firms), 15 years</p>
-                  <p>계명대학교 Professor, 2 years</p>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Cornell U. BA (Government)</p>
+                  <p className="text-sm text-foreground leading-snug">Stony Brook U. MBA</p>
+                  <p className="text-sm text-foreground leading-snug">Brooklyn Law School</p>
+                  <p className="text-sm text-foreground leading-snug">실리콘밸리 (삼성전자/Various Venture Firms), 15 years</p>
+                  <p className="text-sm text-foreground leading-snug">계명대학교 Professor, 2 years</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 김세준 */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">김세준</h3>
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">김세준</h3>
+              <div className="mb-4">
                 <p className="text-sm text-foreground/60 mb-4"></p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>Holyname Catholic High School (메사추세츠) 졸업</p>
-                  <p>이화여대 국제학부</p>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">Holyname Catholic High School (메사추세츠) 졸업</p>
+                  <p className="text-sm text-foreground leading-snug">이화여대 국제학부</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 강이원 */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">강이원</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : College Counselling, College Essay
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">강이원</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>College Counselling, College Essay
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>인터프렙 SAT, AP English Lit. & Lang. 강의</p>
-                  <p>Columbia University, BA (Creative Writing)</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">인터프렙 SAT, AP English Lit. & Lang. 강의</p>
+                  <p className="text-sm text-foreground leading-snug">Columbia University, BA (Creative Writing)</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 이경은 */}
-            <Card className="fade-up border-none bg-white overflow-hidden">
-              <div className="h-1 bg-primary" />
-              <CardContent className="p-8">
-                <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
-                <h3 className="text-2xl font-bold text-foreground mb-2">이경은</h3>
-                <p className="text-sm text-foreground/60 mb-4">
-                  과목 : SAT Math/RW, IB Mathematics AA/AI SL, Japanese B SL/HL, Chemistry SL, Physics SL, MYP, AP Precalculus, AP Chemistry, AP Physics 1
+            <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+              <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">이경은</h3>
+              <div className="h-px bg-border mb-3" />
+              <div className="mb-4">
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-medium text-muted-foreground">과목 : </span>SAT Math/RW, IB Mathematics AA/AI SL, Japanese B SL/HL, Chemistry SL, Physics SL, MYP, AP Precalculus, AP Chemistry, AP Physics 1
                 </p>
-                <div className="space-y-1 text-sm text-foreground/80">
-                  <p className="font-semibold mb-2">주요경력</p>
-                  <p>New York University, BS (Mathematics)</p>
+              </div>
+              <div className="h-px bg-border mb-3" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">주요경력</p>
+                <div className="space-y-0.5">
+                  <p className="text-sm text-foreground leading-snug">New York University, BS (Mathematics)</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </AnimatedSection>
@@ -471,19 +510,6 @@ export default function Page() {
           </div>
         </div>
       </footer>
-
-      <style jsx>{`
-        .fade-up {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .fade-up.animate-in {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
     </div>
   )
 }
