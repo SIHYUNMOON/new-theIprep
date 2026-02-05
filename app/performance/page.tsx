@@ -91,48 +91,48 @@ export default function AdmissionResultsPage() {
 
               <div className="bg-black rounded-lg p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
-                  Interprep TV - 수강생 인터뷰 리스트
+                  TheIPrep TV - 입시결과 공개
                 </h3>
                 <div className="space-y-4">
                   <a
-                    href="https://www.youtube.com/watch?v=FuAesNCpbd8"
+                    href="https://www.youtube.com/watch?v=lk88CBVT5_E"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-white text-sm leading-relaxed hover:underline transition-all"
                   >
-                    UPenn 합격생의 스펙과 활동내역은 어떨까?
+                    2024/2025 디아이프렙 입시결과
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=dOY6UJuYQiw"
+                    href="https://www.youtube.com/watch?v=pXpt295qNRg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-white text-sm leading-relaxed hover:underline transition-all"
                   >
-                    SAT 1520점 달성! 전효재 수강생 인터뷰
+                    2025 보딩스쿨 합격 실적 공개! 상위권 학교 대거 합격
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=s071XV3tEXA"
+                    href="https://www.youtube.com/watch?v=OMYc_3WQawI"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-white text-sm leading-relaxed hover:underline transition-all"
                   >
-                    ACT Composite 36점 만점 달성! 민규철 수강생 인터뷰
+                    2024년 입시결과 및 Trend: who succeeded and what to prepare?
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=TIaOXlfoZMc"
+                    href="https://www.youtube.com/watch?v=Ec-gygAmw6o"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-white text-sm leading-relaxed hover:underline transition-all"
                   >
-                    온라인 클래스 수강만으로 1440점 달성! 김00 수강생 인터뷰
+                    디아이프렙 2022년 합격생 현황(2022년 4월 기준)
                   </a>
                   <a
-                    href="https://www.youtube.com/watch?v=EzrPa5bPtP0"
+                    href="https://www.youtube.com/watch?v=j4IGAibkpjE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-white text-sm leading-relaxed hover:underline transition-all"
                   >
-                    스탠포드 합격 스펙 대공개!? 인터프렙 인터뷰
+                    디아이프렙 2021 4월 현재 대학 합격 현황
                   </a>
                 </div>
                 <p className="text-xs text-gray-400 mt-6">

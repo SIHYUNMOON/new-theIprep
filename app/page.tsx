@@ -46,7 +46,7 @@ export default function Page() {
               <a href="/consultants" className="hover:text-primary transition-colors">
                 Our Consultants
               </a>
-              <a href="#boarding" className="hover:text-primary transition-colors">
+              <a href="/boarding-school" className="hover:text-primary transition-colors">
                 보딩스쿨 컨설팅
               </a>
               <a href="#college" className="hover:text-primary transition-colors">
