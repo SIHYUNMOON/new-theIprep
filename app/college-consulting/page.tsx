@@ -37,13 +37,16 @@ export default function CollegeConsultingPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-        <nav className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-16">
-            <a href="/" className="font-serif text-xl font-semibold text-primary">
-              The I Prep
-            </a>
-
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/image.png"
+                alt="The-I Prep Logo"
+                className="h-10 w-auto"
+              />
+            </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
               <a href="/performance" className="hover:text-primary transition-colors">
                 Our Performance
@@ -146,7 +149,7 @@ export default function CollegeConsultingPage() {
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">Profile & Activity Planning</p>
                 <p className="text-foreground/80 leading-relaxed">
-                  대학 입시는 단순한 성적만을 평가하는 것이 아니라, 학생의 활동과 리더십을 중점적으로 고려합니다. 봉사 활동, 연구 프로젝트, 인턴십, 경시대회 참가 등 학생의 관심 분야에 맞춘 활동을 기획하고 관리하여 지원서에서 강력한 경쟁력을 가질 수 있도록 돕습니다.
+                  대학 입시는 단순한 성적만을 평가하는 것이 아니라, 학생의 활동과 리더십을 중점적으로 ���려합니다. 봉사 활동, 연구 프로젝트, 인턴십, 경시대회 참가 등 학생의 관심 분야에 맞춘 활동을 기획하고 관리하여 지원서에서 강력한 경쟁력을 가질 수 있도록 돕습니다.
                 </p>
               </div>
 

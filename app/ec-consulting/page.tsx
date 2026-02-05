@@ -4,19 +4,17 @@ import { Button } from "@/components/ui/button"
 export default function ECConsultingPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-20">
-            <a href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[rgb(13,37,99)] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">i</span>
-              </div>
-              <span className="font-serif text-xl font-semibold text-primary">
-                The i Partners
-              </span>
-            </a>
-
+      {/* Header */}
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/image.png"
+                alt="The-I Prep Logo"
+                className="h-10 w-auto"
+              />
+            </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
               <a href="/performance" className="hover:text-primary transition-colors">
                 Our Performance
@@ -42,17 +40,19 @@ export default function ECConsultingPage() {
               <a href="/college" className="hover:text-primary transition-colors">
                 대학교 컨설팅
               </a>
+              <a href="/#transfer" className="hover:text-primary transition-colors">
+                편입 컨설팅
+              </a>
+              <a href="/#graduate" className="hover:text-primary transition-colors">
+                대학원 컨설팅
+              </a>
+              <a href="/#ec" className="hover:text-primary transition-colors">
+                EC컨설팅
+              </a>
             </div>
-
-            <Button
-              size="sm"
-              className="bg-[rgb(13,37,99)] hover:bg-[rgb(23,47,109)] text-white"
-            >
-              Contact Us
-            </Button>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <main>
         {/* Hero Section */}
