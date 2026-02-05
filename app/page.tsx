@@ -40,7 +40,7 @@ export default function Page() {
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
-              <a href="#performance" className="hover:text-primary transition-colors">
+              <a href="/performance" className="hover:text-primary transition-colors">
                 Our Performance
               </a>
               <a href="#consultants" className="hover:text-primary transition-colors">

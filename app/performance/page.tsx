@@ -11,9 +11,47 @@ export default function AdmissionResultsPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Header */}
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <a href="/" className="flex items-center gap-3">
+              <img
+                src="/images/image.png"
+                alt="The-I Prep Logo"
+                className="h-10 w-auto"
+              />
+            </a>
+            <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
+              <a href="/performance" className="hover:text-primary transition-colors">
+                Our Performance
+              </a>
+              <a href="/#consultants" className="hover:text-primary transition-colors">
+                Our Consultants
+              </a>
+              <a href="/#boarding" className="hover:text-primary transition-colors">
+                보딩스쿨 컨설팅
+              </a>
+              <a href="/#college" className="hover:text-primary transition-colors">
+                대학교 컨설팅
+              </a>
+              <a href="/#transfer" className="hover:text-primary transition-colors">
+                편입 컨설팅
+              </a>
+              <a href="/#graduate" className="hover:text-primary transition-colors">
+                대학원 컨설팅
+              </a>
+              <a href="/#ec" className="hover:text-primary transition-colors">
+                EC컨설팅
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
       <main className="flex-1">
         {/* Hero Section */}
-        <AnimatedSection className="relative h-[50vh] min-h-[400px] flex items-center justify-center">
+        <AnimatedSection className="relative h-[50vh] min-h-[400px] flex items-center justify-center pt-16">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/pexels-pixabay-267885.jpg"
