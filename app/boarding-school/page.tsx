@@ -155,7 +155,7 @@ export default function BoardingSchoolPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Senior Boarding */}
-              <div className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/senior-boarding" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   명문 시니어 보딩 컨설팅
                 </h3>
@@ -184,7 +184,7 @@ export default function BoardingSchoolPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* Junior Boarding */}
               <a href="/junior-boarding" className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
