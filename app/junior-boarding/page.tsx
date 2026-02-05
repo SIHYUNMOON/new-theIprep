@@ -49,13 +49,13 @@ export default function JuniorBoardingPage() {
         <AnimatedSection className="relative h-[30vh] min-h-[200px] flex items-center justify-center pt-16">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/junior-hero-clean.jpg"
+              src="/images/junior-hero-waves.jpg"
               alt="Junior Boarding Consulting"
               fill
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/30" />
           </div>
           
           <div className="relative z-10">
