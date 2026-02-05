@@ -416,14 +416,15 @@ export default function Page() {
       {/* Footer */}
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-7xl text-center">
-          <Image
-            src="/images/image.png"
-            alt="The-I Prep Logo"
-            width={140}
-            height={40}
-            style={{ height: '2.5rem', width: 'auto' }}
-            className="mx-auto mb-4 brightness-0 invert"
-          />
+          <div className="flex justify-center mb-4">
+            <Image
+              src="/images/image.png"
+              alt="The-I Prep Logo"
+              width={140}
+              height={40}
+              className="brightness-0 invert"
+            />
+          </div>
           <p className="text-sm opacity-90">
             © 2024 The-I Prep. All rights reserved.
           </p>
