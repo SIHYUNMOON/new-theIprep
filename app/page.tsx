@@ -66,7 +66,7 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-6 min-h-[85vh] flex items-center">
+      <section className="relative pt-32 pb-24 px-6 min-h-[85vh] flex items-center fade-up">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-consulting.jpg"
@@ -91,16 +91,16 @@ export default function Page() {
       </section>
 
       {/* How We Approach Section */}
-      <section className="py-24 px-6 bg-primary">
+      <section className="py-24 px-6 bg-[rgb(236,236,244)] fade-up">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="fade-up">
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-6 text-balance">
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-6 text-balance">
                 How we approach
                 <br />
                 consulting
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-lg text-foreground/80 leading-relaxed">
                 디아이프렙은 단순한 정보를 제공하는 것을 넘어, 정직하고 투명한 방법으로 학생들에게 필요한 방향성과 전략을 제공하며, 장기적인 성과를 위한 컨설팅을 제공합니다. 디아이프렙은 사명감을 가지고 학생들과 함께합니다. 학생들이 꿈꾸는 미래를 현실로 만들 수 있도록 최선을 다하며, 지속 가능한 성공을 통해 글로벌 리더로 성장할 수 있도록 돕는 것을 목표로 합니다.
               </p>
             </div>
@@ -121,7 +121,7 @@ export default function Page() {
       </section>
 
       {/* About The-I Prep Section */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 fade-up">
         <div className="container mx-auto max-w-7xl">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             About The-I Prep
@@ -144,7 +144,7 @@ export default function Page() {
                   전문 컨설턴트 팀
                 </h3>
                 <p className="text-white/90 leading-relaxed">
-                  맥스원장과 팀은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 저희는 컨설팅을 업무로 여기지 않으며, 학생들이 자신의 가능성을 발견하고 새로운 도전에 나설 수 있도록 돕는 변화의 과정의 멘토링이라 생각합니다.
+                  ���스원장과 팀은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 저희는 컨설팅을 업무로 여기지 않으며, 학생들이 자신의 가능성을 발견하고 새로운 도전에 나설 수 있도록 돕는 변화의 과정의 멘토링이라 생각합니다.
                 </p>
               </CardContent>
             </Card>
@@ -164,9 +164,9 @@ export default function Page() {
       </section>
 
       {/* Consultant Team Section */}
-      <section id="consultants" className="py-24 px-6 bg-primary">
+      <section id="consultants" className="py-24 px-6 bg-[rgb(236,236,244)] fade-up">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center mb-16 fade-up">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             Consultant Team
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -457,7 +457,7 @@ export default function Page() {
       </section>
 
       {/* YouTube Section */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 fade-up">
         <div className="container mx-auto max-w-5xl">
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             The-I Prep Youtube
@@ -479,13 +479,6 @@ export default function Page() {
       {/* Footer */}
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex justify-center mb-6">
-            <img
-              src="/images/image.png"
-              alt="The-I Prep Logo"
-              className="h-10 w-auto brightness-0 invert"
-            />
-          </div>
           <div className="text-left text-sm space-y-2 opacity-90">
             <p className="leading-relaxed">
               The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
