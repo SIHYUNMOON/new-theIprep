@@ -78,7 +78,7 @@ export default function Page() {
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="container mx-auto max-w-4xl text-center fade-up relative z-10">
-          <h1 className="font-serif text-5xl md:text-7xl font-light text-white mb-8 text-balance">
+          <h1 className="font-serif text-5xl md:text-7xl font-semibold text-white mb-8 text-balance">
             The-I Prep
             <br />
             Consulting
@@ -95,7 +95,7 @@ export default function Page() {
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="fade-up">
-              <h2 className="font-serif text-4xl md:text-5xl font-light text-primary mb-6 text-balance">
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-6 text-balance">
                 How we approach
                 <br />
                 consulting
@@ -104,8 +104,8 @@ export default function Page() {
                 디아이프렙은 단순한 정보를 제공하는 것을 넘어, 정직하고 투명한 방법으로 학생들에게 필요한 방향성과 전략을 제공하며, 장기적인 성과를 위한 컨설팅을 제공합니다. 디아이프렙은 사명감을 가지고 학생들과 함께합니다. 학생들이 꿈꾸는 미래를 현실로 만들 수 있도록 최선을 다하며, 지속 가능한 성공을 통해 글로벌 리더로 성장할 수 있도록 돕는 것을 목표로 합니다.
               </p>
             </div>
-            <div className="fade-up">
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+            <div className="fade-up flex justify-center lg:justify-end">
+              <div className="relative w-64 h-80 rounded-lg overflow-hidden">
                 <Image
                   src="/images/maxjoo.png"
                   alt="Max Joo - Director"
@@ -123,38 +123,38 @@ export default function Page() {
       {/* About The-I Prep Section */}
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="font-serif text-4xl md:text-5xl font-light text-primary text-center mb-16 fade-up">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             About The-I Prep
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="fade-up border-border/50 hover:shadow-lg transition-shadow">
+            <Card className="fade-up border-none hover:shadow-lg transition-shadow bg-[#2c3e5e]">
               <CardContent className="p-8">
-                <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   비전
                 </h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   디아이프렙은 단순한 결과가 아닌 과정 자체를 소중히 여기며, 학생들이 입시 여정을 의미있게 경험할 수 있도록 최선을 다합니다. 학생 개개인의 목표와 가치관을 반영한 컨설팅을 통해, 입학 후에도 대학 생활과 미래 커리어에서 경쟁력을 가지고 글로벌 리더로 성장할 수 있도록 지원합니다
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="fade-up border-border/50 hover:shadow-lg transition-shadow">
+            <Card className="fade-up border-none hover:shadow-lg transition-shadow bg-[#3d5170]">
               <CardContent className="p-8">
-                <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   전문 컨설턴트 팀
                 </h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   맥스원장과 팀은 세계적인 명문 대학들이 찾고 있는 지원자의 핵심 요소를 깊이 이해하고 있으며, 학생들에게 맞춤형 조언과 멘토링을 제공합니다. 저희는 컨설팅을 업무로 여기지 않으며, 학생들이 자신의 가능성을 발견하고 새로운 도전에 나설 수 있도록 돕는 변화의 과정의 멘토링이라 생각합니다.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="fade-up border-border/50 hover:shadow-lg transition-shadow">
+            <Card className="fade-up border-none hover:shadow-lg transition-shadow bg-primary">
               <CardContent className="p-8">
-                <h3 className="font-serif text-2xl font-semibold text-primary mb-4">
+                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   학생 중심 프로그램
                 </h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 지난 10년 동안 500명 넘는 학생들과 함께한 성공적인 노하우와 데이터를 바탕으로 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞는 학생 개개인에 최적화된 컨설팅을 제공합니다.
                 </p>
               </CardContent>
@@ -166,7 +166,7 @@ export default function Page() {
       {/* Consultant Team Section */}
       <section id="consultants" className="py-24 px-6 bg-muted/30">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="font-serif text-4xl md:text-5xl font-light text-primary text-center mb-16 fade-up">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             Consultant Team
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -405,7 +405,7 @@ export default function Page() {
       {/* YouTube Section */}
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="font-serif text-4xl md:text-5xl font-light text-primary text-center mb-16 fade-up">
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
             The-I Prep Youtube
           </h2>
           <div className="fade-up">
