@@ -60,9 +60,24 @@ export default function BoardingSchoolPage() {
                   </div>
                 </div>
               </div>
-              <a href="/college" className="hover:text-primary transition-colors">
-                대학교 컨설팅
-              </a>
+              <div className="relative group">
+                <a href="/college" className="hover:text-primary transition-colors cursor-pointer">
+                  대학교 컨설팅
+                </a>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/college-consulting" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      대학 컨설팅
+                    </a>
+                    <a href="/mentoring-consulting" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      멘토링 컨설팅
+                    </a>
+                    <a href="/ec-consulting" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      EC 컨설팅
+                    </a>
+                  </div>
+                </div>
+              </div>
               <a href="/#transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
@@ -154,7 +169,7 @@ export default function BoardingSchoolPage() {
                     포괄적인 서비스
                   </h3>
                   <p className="text-foreground/80 leading-relaxed">
-                    저희는 입시 과정 전��에 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 보딩스쿨을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 보딩스쿨 입시를 준비할 수 있도록 최선을 다하고 있습니다.
+                    저희는 입시 과정 전����� 걸쳐 포괄적인 지원을 제공합니다. 학생들이 자신에게 가장 적합한 보딩스쿨을 선택할 수 있도록 돕는 것에서부터, 설득력 있는 에세이를 작성하고 성공적인 인터뷰를 준비할 수 있도록 전문적인 도움을 드립니다. 입시의 모든 단계를 철저히 지원함으로써 학생들이 자신감을 가지고 보딩스쿨 입시를 준비할 수 있도록 최선을 다하고 있습니다.
                   </p>
                 </div>
               </div>
