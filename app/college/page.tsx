@@ -160,7 +160,7 @@ export default function CollegePage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {/* College Consulting */}
-              <div className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/college-consulting" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   대학 컨설팅
                 </h3>
@@ -189,7 +189,7 @@ export default function CollegePage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* Mentoring */}
               <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
