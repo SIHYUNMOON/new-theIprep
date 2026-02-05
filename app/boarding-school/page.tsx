@@ -187,7 +187,7 @@ export default function BoardingSchoolPage() {
               </div>
 
               {/* Junior Boarding */}
-              <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/junior-boarding" className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   주니어 보딩 컨설팅
                 </h3>
@@ -208,7 +208,7 @@ export default function BoardingSchoolPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* Advising */}
               <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">

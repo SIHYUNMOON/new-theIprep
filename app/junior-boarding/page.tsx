@@ -46,10 +46,10 @@ export default function JuniorBoardingPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <AnimatedSection className="relative h-[40vh] min-h-[300px] flex items-center justify-center pt-16">
+        <AnimatedSection className="relative h-[30vh] min-h-[200px] flex items-center justify-center pt-16">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/boarding-hero.jpg"
+              src="/images/junior-hero.jpg"
               alt="Junior Boarding Consulting"
               fill
               className="object-cover"
@@ -59,8 +59,8 @@ export default function JuniorBoardingPage() {
           </div>
           
           <div className="relative z-10">
-            <h1 className="font-serif text-5xl md:text-6xl font-semibold text-white text-center text-balance">
-              Senior Boarding
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center text-balance">
+              Junior Boarding
               <br />
               Consulting
             </h1>
@@ -73,10 +73,13 @@ export default function JuniorBoardingPage() {
             <div className="mb-12">
               <p className="text-foreground/70 mb-6">대상 6학년, 7학년, 8학년 학생</p>
               <div className="h-px bg-border mb-8" />
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-4">
-                <span className="text-[rgb(13,37,99)]">프리미엄 패키지</span>는 상위 주니어 보딩스쿨 입학을 목표로 하는 학생들에게 <span className="text-[rgb(13,37,99)]">종합적인 지원</span>을 제공합니다.
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">
+                <span className="text-[rgb(13,37,99)]">Premium Package</span>
               </h2>
-              <div className="w-24 h-px bg-primary mt-6" />
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                <span className="text-[rgb(13,37,99)] font-semibold">프리미엄 패키지</span>는 상위 주니어 보딩스쿨 입학을 목표로 하는 학생들에게 <span className="text-[rgb(13,37,99)] font-semibold">종합적인 지원</span>을 제공합니다.
+              </p>
+              <div className="w-24 h-px bg-border mt-6" />
             </div>
 
             <h3 className="text-2xl font-semibold text-foreground mb-8">포함 서비스</h3>
@@ -131,10 +134,13 @@ export default function JuniorBoardingPage() {
         <AnimatedSection className="py-24 px-6">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12">
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-4">
-                <span className="text-[rgb(13,37,99)]">디럭스 패키지</span>는 기존의 학생 프로필을 강화하고, <span className="text-[rgb(13,37,99)]">입학에 필요한 주요 요소</span>를 집중적으로 지원합니다.
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">
+                <span className="text-[rgb(13,37,99)]">Deluxe Package</span>
               </h2>
-              <div className="w-24 h-px bg-primary mt-6" />
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                <span className="text-[rgb(13,37,99)] font-semibold">디럭스 패키지</span>는 기존의 학생 프로필을 강화하고, <span className="text-[rgb(13,37,99)] font-semibold">입학에 필요한 주요 요소</span>를 집중적으로 지원합니다.
+              </p>
+              <div className="w-24 h-px bg-border mt-6" />
             </div>
 
             <h3 className="text-2xl font-semibold text-foreground mb-8">포함 서비스</h3>
@@ -173,10 +179,13 @@ export default function JuniorBoardingPage() {
         <AnimatedSection className="py-24 px-6">
           <div className="container mx-auto max-w-6xl">
             <div className="mb-12">
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-4">
-                <span className="text-[rgb(13,37,99)]">라이트 패키지</span>는 학생들이 <span className="text-[rgb(13,37,99)]">에세이와 인터뷰 준비</span>에 집중할 수 있도록 설계된 프로그램입니다.
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">
+                <span className="text-[rgb(13,37,99)]">Light Package</span>
               </h2>
-              <div className="w-24 h-px bg-primary mt-6" />
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                <span className="text-[rgb(13,37,99)] font-semibold">라이트 패키지</span>는 학생들이 <span className="text-[rgb(13,37,99)] font-semibold">에세이와 인터뷰 준비</span>에 집중할 수 있도록 설계된 프로그램입니다.
+              </p>
+              <div className="w-24 h-px bg-border mt-6" />
             </div>
 
             <h3 className="text-2xl font-semibold text-foreground mb-8">포함 서비스</h3>
