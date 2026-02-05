@@ -46,9 +46,21 @@ export default function Page() {
               <a href="/consultants" className="hover:text-primary transition-colors">
                 Our Consultants
               </a>
-              <a href="/boarding-school" className="hover:text-primary transition-colors">
-                보딩스쿨 컨설팅
-              </a>
+              <div className="relative group">
+                <a href="/boarding-school" className="hover:text-primary transition-colors cursor-pointer">
+                  보딩스쿨 컨설팅
+                </a>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-white border border-border rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/senior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                      Senior Boarding
+                    </a>
+                    <a href="/junior-boarding" className="block px-4 py-2 hover:bg-gray-100 transition-colors text-foreground">
+                      Junior Boarding
+                    </a>
+                  </div>
+                </div>
+              </div>
               <a href="#college" className="hover:text-primary transition-colors">
                 대학교 컨설팅
               </a>
@@ -286,7 +298,7 @@ export default function Page() {
               </div>
             </div>
 
-            {/* 홍다인 (Gabrielle) */}
+            {/* 홍다�� (Gabrielle) */}
             <div className="fade-up border border-border rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
               <div className="w-16 h-1 bg-[rgb(13,37,99)] mb-4" />
               <h3 className="text-2xl font-bold text-foreground mb-4">홍다인 (Gabrielle)</h3>
