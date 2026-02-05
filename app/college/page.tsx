@@ -212,7 +212,7 @@ export default function CollegePage() {
               </div>
 
               {/* EC Consulting */}
-              <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/ec-consulting" className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   EC 컨설팅
                 </h3>
@@ -241,7 +241,7 @@ export default function CollegePage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </AnimatedSection>
