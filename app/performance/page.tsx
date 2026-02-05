@@ -26,7 +26,7 @@ export default function AdmissionResultsPage() {
               <a href="/performance" className="hover:text-primary transition-colors">
                 Our Performance
               </a>
-              <a href="/#consultants" className="hover:text-primary transition-colors">
+              <a href="/consultants" className="hover:text-primary transition-colors">
                 Our Consultants
               </a>
               <a href="/#boarding" className="hover:text-primary transition-colors">
