@@ -32,11 +32,10 @@ export default function Page() {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Image
+              <img
                 src="/images/image.png"
                 alt="The-I Prep Logo"
-                width={140}
-                height={40}
+                className="h-10 w-auto"
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -417,12 +416,10 @@ export default function Page() {
       <footer className="py-12 px-6 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-7xl text-center">
           <div className="flex justify-center mb-4">
-            <Image
+            <img
               src="/images/image.png"
               alt="The-I Prep Logo"
-              width={140}
-              height={40}
-              className="brightness-0 invert"
+              className="h-10 w-auto brightness-0 invert"
             />
           </div>
           <p className="text-sm opacity-90">
