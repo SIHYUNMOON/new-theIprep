@@ -8,6 +8,7 @@ export function getDb() {
   if (!db) {
     const databaseUrl = process.env.DATABASE_URL;
     if (!databaseUrl) {
+      console.error('[board] DATABASE_URL environment variable is not set');
       throw new Error('DATABASE_URL environment variable is not set');
     }
     db = neon(databaseUrl);
@@ -88,6 +89,12 @@ export async function getPosts(
   pageSize: number;
   totalPages: number;
 }>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[board] db fetch failed:', { error: 'DATABASE_URL not defined', sort, page, pageSize, category });
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
   if (shouldSimulateDbFailure()) {
     console.error('[board] db fetch failed:', { error: 'SIMULATE_DB_FAIL enabled', sort, page, pageSize, category });
     return { ok: false, error: 'db_unavailable' } as const;
@@ -201,6 +208,12 @@ export async function getPosts(
 }
 
 export async function getPostById(id: string): Promise<DbResult<Post | null>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[post] db fetch failed:', { error: 'DATABASE_URL not defined', id });
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
   if (shouldSimulateDbFailure()) {
     console.error('[post] db fetch failed:', { error: 'SIMULATE_DB_FAIL enabled', id });
     return { ok: false, error: 'db_unavailable' } as const;

@@ -1,6 +1,9 @@
 import { Suspense } from 'react'
 import { EditClient } from './client'
 
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 export default async function EditPage({
   params,
 }: {
