@@ -125,6 +125,12 @@ export default function Page() {
                   </div>
                 </div>
               </div>
+              <a href="/board" className="hover:text-primary transition-colors">
+                정보게시판
+              </a>
+              <a href="/login" className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+                로그인
+              </a>
             </div>
           </div>
         </nav>
