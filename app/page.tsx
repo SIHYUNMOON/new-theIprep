@@ -169,7 +169,7 @@ export default function Page() {
               </p>
             </div>
             <div className="fade-up flex justify-center lg:justify-end">
-              <div className="max w-full max-w-md aspect-[3/4] lg:aspect-[2/3]">
+              <div className="relative w-full max-w-sm aspect-[3/4] lg:max-w-md lg:aspect-[2/3]">
                 <Image
                   src="/images/maxjoo.png"
                   alt="Max Joo - Director"
