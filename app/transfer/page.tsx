@@ -208,7 +208,7 @@ export default function TransferPage() {
               </a>
 
               {/* Program 2 */}
-              <div className="fade-up bg-gradient-to-br from-[#3d5170] to-[#2c3e5a] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white">
+              <a href="/transfer-essay" className="fade-up bg-gradient-to-br from-[#3d5170] to-[#2c3e5a] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white block cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold mb-6">
                   에세이 컨설팅
                 </h3>
@@ -227,7 +227,7 @@ export default function TransferPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
