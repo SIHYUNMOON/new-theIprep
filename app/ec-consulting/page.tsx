@@ -104,7 +104,7 @@ export default function ECConsultingPage() {
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h4 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z" />
                   </svg>
                   <span>대회 & 연구</span>
                 </h4>
@@ -168,59 +168,66 @@ export default function ECConsultingPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[rgb(13,37,99)] text-white py-12 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-[rgb(13,37,99)] font-bold text-xl">i</span>
-                </div>
-                <span className="font-serif text-xl font-semibold">The i Partners</span>
-              </div>
-              <p className="text-white/80 leading-relaxed">
-                Your trusted partner in educational consulting
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-white/80">
-                <li>
-                  <a href="/performance" className="hover:text-white transition-colors">
-                    Our Performance
-                  </a>
-                </li>
-                <li>
-                  <a href="/consultants" className="hover:text-white transition-colors">
-                    Our Consultants
-                  </a>
-                </li>
-                <li>
-                  <a href="/boarding-school" className="hover:text-white transition-colors">
-                    보딩스쿨 컨설팅
-                  </a>
-                </li>
-                <li>
-                  <a href="/college" className="hover:text-white transition-colors">
-                    대학교 컨설팅
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-white/80">
-                <li>Email: info@theipartners.com</li>
-                <li>Phone: +1 (555) 123-4567</li>
-              </ul>
-            </div>
+      <footer className="py-12 px-6 bg-primary text-primary-foreground">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-left text-sm space-y-2 opacity-90">
+            <p className="leading-relaxed">
+              The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
+            </p>
+            <p className="leading-relaxed">
+              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
+            </p>
+            <p className="leading-relaxed">
+              입금계좌 | 디아이파트너즈학원<br />
+              신한은행 140-012-951522
+            </p>
+            <p className="pt-2">
+              Copyright © The I Prep. ALL RIGHT RESERVED
+            </p>
           </div>
-
-          <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
-            <p>&copy; {new Date().getFullYear()} The i Partners. All rights reserved.</p>
+        </div>
+        <div className="mt-8 flex justify-between">
+          <div>
+            <span className="font-serif text-xl font-semibold">The i Partners</span>
+            <p className="text-white/80 leading-relaxed">
+              Your trusted partner in educational consulting
+            </p>
           </div>
+          <div>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-white/80">
+              <li>
+                <a href="/performance" className="hover:text-white transition-colors">
+                  Our Performance
+                </a>
+              </li>
+              <li>
+                <a href="/consultants" className="hover:text-white transition-colors">
+                  Our Consultants
+                </a>
+              </li>
+              <li>
+                <a href="/boarding-school" className="hover:text-white transition-colors">
+                  보딩스쿨 컨설팅
+                </a>
+              </li>
+              <li>
+                <a href="/college" className="hover:text-white transition-colors">
+                  대학교 컨설팅
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-white/80">
+              <li>Email: info@theipartners.com</li>
+              <li>Phone: +1 (555) 123-4567</li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
+          <p>&copy; {new Date().getFullYear()} The i Partners. All rights reserved.</p>
         </div>
       </footer>
     </div>

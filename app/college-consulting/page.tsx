@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react"
-
+import React from "react";
 import Image from "next/image";
 import { useEffect } from "react";
 
@@ -134,7 +133,7 @@ export default function CollegeConsultingPage() {
                 <span className="text-[rgb(13,37,99)]">Premium Full Consulting</span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                미국 대학 입시를 철저히 준비하기 위해 <span className="text-[rgb(13,37,99)] font-semibold">전 과정 컨설팅을 원하는 학생들을 위한 프로그램</span>입니다. 단순한 원서 작성 지원이 아닌, 학생의 강점을 최대한 반영한 <span className="text-[rgb(13,37,99)] font-semibold">장기적인 로드맵을 설계</span>하여 입시 경쟁력을 극대화합니다
+                미국 대학 입시를 철저히 준비하기 위해 <span className="text-[rgb(13,37,99)] font-semibold">전 과정 컨설팅을 원하는 학생들을 위한 프로그램</span>입니다. 단순한 원서 작성 지원이 아닌, 학생의 강점을 최대한 반영한 <span className="text-[rgb(13,37,99)] font-semibold">장기적인 로드맵을 설계</span>하여 입시 경쟁력을 극대화합니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>
@@ -164,14 +163,14 @@ export default function CollegeConsultingPage() {
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">Profile & Activity Planning</p>
                 <p className="text-foreground/80 leading-relaxed">
-                  대학 입시는 단순한 성적만을 평가하는 것이 아니라, 학생의 활동과 리더십을 중점적으로 ���려합니다. 봉사 활동, 연구 프로젝트, 인턴십, 경시대회 참가 등 학생의 관심 분야에 맞춘 활동을 기획하고 관리하여 지원서에서 강력한 경쟁력을 가질 수 있도록 돕습니다.
+                  대학 입시는 단순한 성적만을 평가하는 것이 아니라, 학생의 활동과 리더십을 중점적으로 고려합니다. 봉사 활동, 연구 프로젝트, 인턴십, 경시대회 참가 등 학생의 관심 분야에 맞춘 활동을 기획하고 관리하여 지원서에서 강력한 경쟁력을 가질 수 있도록 돕습니다.
                 </p>
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h4 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                   </svg>
                   <span>대학 리스트 선정</span>
                 </h4>
@@ -184,7 +183,7 @@ export default function CollegeConsultingPage() {
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h4 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                   </svg>
                   <span>원서 작성 및 검토</span>
                 </h4>
@@ -212,7 +211,7 @@ export default function CollegeConsultingPage() {
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h4 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <span>기타 입시 관련 서비스</span>
                 </h4>
@@ -238,7 +237,7 @@ export default function CollegeConsultingPage() {
                 <span className="text-[rgb(13,37,99)]">Deluxe Package</span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                디럭스 패키지 프로그램은 <span className="text-[rgb(13,37,99)] font-semibold">대학 리스트 선정부터 지원서 작성 및 에세이 코칭까지 핵심적인 입시 요소를 집중적으로 지원</span>하는 프로그램입니다. 장기적인 이력 관리나 액티비티 설계가 필요하지 않은 학생들에게 적합하며, <span className="text-[rgb(13,37,99)] font-semibold">핵심적인 지원 절차에서 강력한 전략을 제공</span>합니다.
+                디럭스 패키지 프로그램은 <span className="text-[rgb(13,37,99)] font-semibold">대학 리스트 선정부터 지원서 작성 및 에세이 코칭까지 핵심적인 입시 요소를 집중적으로 지원</span>하는 프로그램입니다. 장기적인 이력 관리나 액티비티 설계가 필요하지 않은 학생들에게 적합하며, <span className="text-[rgb(13,37,99)] font-semibold">핵심적인 단원 절차에서 강력한 전략을 제공</span>합니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>
@@ -254,22 +253,22 @@ export default function CollegeConsultingPage() {
                   <span>대학 리스트 선정</span>
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">College Selection</p>
-                <p className="text-foreground/80 leading-relaxed">
-                  학생의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.
-                </p>
+                <ul className="text-foreground/80 leading-relaxed space-y-1 text-sm list-disc list-inside">
+                  <li>학생의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.</li>
+                </ul>
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h4 className="text-xl font-semibold text-primary mb-3 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[rgb(13,37,99)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
                   <span>원서 작성 및 검토</span>
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">Application Guidance & Review</p>
-                <p className="text-foreground/80 leading-relaxed">
-                  Common App을 포함한 주요 원서의 작성 및 피드백 제공.
-                </p>
+                <ul className="text-foreground/80 leading-relaxed space-y-1 text-sm list-disc list-inside">
+                  <li>Common App을 포함한 주요 원서의 작성 및 피드백 제공.</li>
+                </ul>
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
@@ -280,7 +279,7 @@ export default function CollegeConsultingPage() {
                   <span>에세이 작성 및 지도</span>
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">Essay Writing & Editing</p>
-                <ul className="text-foreground/80 leading-relaxed space-y-1 list-disc list-inside">
+                <ul className="text-foreground/80 leading-relaxed space-y-1 text-sm list-disc list-inside">
                   <li>메인 에세이(Main Essay, Personal Statement) 작성</li>
                   <li>대학별 추가 에세이(Supplemental Essay) 작성 및 수정</li>
                 </ul>
@@ -374,7 +373,7 @@ export default function CollegeConsultingPage() {
                 <span className="text-[rgb(13,37,99)]">미대</span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                미국 명문 아트 스쿨 입시는 포트폴리오와 창의적 스토리텔링이 핵심 요소입니다. 디아이프렙의 아트 스쿨 컨설팅 프로그램은 포트폴리오 컨설팅과 포트폴리오의 스토리와 맞는 artist statement 그리고 work description컨설팅을 결합한 타 미술 유학원과 차별화되는 all-inclusive 프로그램으로, 학생이 자신의 예술적 비전을 명확하게 전달할 수 있도록 모든 요소를 지원합니다.
+                미국 명문 아트 스쿨 입시는 포트폴리오와 창의적 스토리텔링이 핵심 요소입니다. 디아이프렙의 아트 스쿨 컨설팅 프로그램은 포트폴리오 컨설팅과 포트폴리오의 스토리와 맞는 artist statement 그리고 work description 컨설팅을 결합한 타 미술 유학원과 차별화되는 all-inclusive 프로그램으로, 학생이 자신의 예술적 비전을 명확하게 전달할 수 있도록 모든 요소를 지원합니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>
@@ -444,37 +443,22 @@ export default function CollegeConsultingPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[rgb(13,37,99)] text-white py-12 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-serif text-xl font-semibold mb-4">The I Prep</h3>
-              <p className="text-white/80 leading-relaxed">
-                미국 명문 보딩스쿨 및 대학 입시 전문 컨설팅
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-white/80">
-                Email: info@theiprep.com
-                <br />
-                Phone: +1 (XXX) XXX-XXXX
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Follow Us</h4>
-              <div className="flex gap-4">
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  Instagram
-                </a>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  Facebook
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/60">
-            <p>&copy; 2024 The I Prep. All rights reserved.</p>
+      <footer className="py-12 px-6 bg-primary text-primary-foreground">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-left text-sm space-y-2 opacity-90">
+            <p className="leading-relaxed">
+              The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
+            </p>
+            <p className="leading-relaxed">
+              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
+            </p>
+            <p className="leading-relaxed">
+              입금계좌 | 디아이파트너즈학원<br />
+              신한은행 140-012-951522
+            </p>
+            <p className="pt-2">
+              Copyright © The I Prep. ALL RIGHT RESERVED
+            </p>
           </div>
         </div>
       </footer>
