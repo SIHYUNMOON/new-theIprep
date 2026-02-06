@@ -33,9 +33,9 @@ export default function TransferPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/images/the-i-logo.png"
+                src="/images/image.png"
                 alt="The-I Prep Logo"
-                className="h-14 w-auto"
+                className="h-10 w-auto"
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -281,7 +281,7 @@ export default function TransferPage() {
               디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
             </p>
             <p className="leading-relaxed">
-              입금계좌 | ���아이파트너즈학원<br />
+              입금계좌 | 디아이파트너즈학원<br />
               신한은행 140-012-951522
             </p>
             <p className="pt-2">

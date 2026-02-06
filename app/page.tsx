@@ -35,9 +35,9 @@ export default function Page() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/images/the-i-logo.png"
+                src="/images/image.png"
                 alt="The-I Prep Logo"
-                className="h-14 w-auto"
+                className="h-10 w-auto"
               />
             </div>
             <div className="hidden lg:flex flex-center gap-8 text-sm font-medium">
