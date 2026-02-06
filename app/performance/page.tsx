@@ -62,7 +62,7 @@ export default function AdmissionResultsPage() {
                   </div>
                 </div>
               </div>
-              <a href="/#transfer" className="hover:text-primary transition-colors">
+              <a href="/transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
               <a href="/#graduate" className="hover:text-primary transition-colors">

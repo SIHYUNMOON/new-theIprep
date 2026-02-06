@@ -74,7 +74,7 @@ export default function MentoringConsulting() {
                   </div>
                 </div>
               </div>
-              <a href="/#transfer" className="hover:text-primary transition-colors">
+              <a href="/transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
               <a href="/#graduate" className="hover:text-primary transition-colors">
@@ -294,7 +294,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>전공별 추천 캠프, 리서치, 커뮤니티 활동 안내</span>
+                      <span>전공별 추�� 캠프, 리서치, 커뮤니티 활동 안내</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
@@ -426,7 +426,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>SAT/ACT/TOEFL/AP 등 주요 시험 대비 일정 및 준비 전략 제공</span>
+                      <span>SAT/ACT/TOEFL/AP 등 주요 시험 대비 일정 �� 준비 전략 제공</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>

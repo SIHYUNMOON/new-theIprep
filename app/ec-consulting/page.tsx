@@ -55,7 +55,7 @@ export default function ECConsultingPage() {
                   </div>
                 </div>
               </div>
-              <a href="/#transfer" className="hover:text-primary transition-colors">
+              <a href="/transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
               <a href="/#graduate" className="hover:text-primary transition-colors">
@@ -185,49 +185,6 @@ export default function ECConsultingPage() {
               Copyright © The I Prep. ALL RIGHT RESERVED
             </p>
           </div>
-        </div>
-        <div className="mt-8 flex justify-between">
-          <div>
-            <span className="font-serif text-xl font-semibold">The i Partners</span>
-            <p className="text-white/80 leading-relaxed">
-              Your trusted partner in educational consulting
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-white/80">
-              <li>
-                <a href="/performance" className="hover:text-white transition-colors">
-                  Our Performance
-                </a>
-              </li>
-              <li>
-                <a href="/consultants" className="hover:text-white transition-colors">
-                  Our Consultants
-                </a>
-              </li>
-              <li>
-                <a href="/boarding-school" className="hover:text-white transition-colors">
-                  보딩스쿨 컨설팅
-                </a>
-              </li>
-              <li>
-                <a href="/college" className="hover:text-white transition-colors">
-                  대학교 컨설팅
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-white/80">
-              <li>Email: info@theipartners.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} The i Partners. All rights reserved.</p>
         </div>
       </footer>
     </div>
