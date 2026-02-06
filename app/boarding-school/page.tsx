@@ -110,9 +110,9 @@ export default function BoardingSchoolPage() {
             <div className="flex items-center justify-between">
               <a href="/" className="flex items-center gap-3">
                 <img
-                  src="/images/image.png"
+                  src="/images/the-i-logo.png"
                   alt="The-I Prep Logo"
-                  className="h-10 w-auto"
+                  className="h-14 w-auto"
                 />
               </a>
               <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -264,7 +264,7 @@ export default function BoardingSchoolPage() {
                 {/* Senior Boarding */}
                 <a href="/senior-boarding" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
                   <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
-                    명문 시니어 보딩 컨설팅
+                    명문 시니어 보딩 ���설팅
                   </h3>
                   <div className="space-y-3 flex-1">
                     <p className="text-white/90 font-medium">대상: 9 학년, 10 학년 학생</p>

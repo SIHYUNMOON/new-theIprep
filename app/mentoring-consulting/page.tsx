@@ -30,9 +30,9 @@ export default function MentoringConsulting() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/images/image.png"
+                src="/images/the-i-logo.png"
                 alt="The-I Prep Logo"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -293,7 +293,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>전공별 추천 캠프, 리서치, 커뮤니티 활동 안내</span>
+                      <span>전공별 추천 캠프, 리서치, 커뮤니티 활�� 안내</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>

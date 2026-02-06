@@ -12,9 +12,9 @@ export default function SeniorBoardingPage() {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center gap-3">
               <img
-                src="/images/image.png"
+                src="/images/the-i-logo.png"
                 alt="The-I Prep Logo"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </a>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -364,7 +364,7 @@ export default function SeniorBoardingPage() {
                   <span>추가 지원</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  추천��� 준비, 행정 서류 작성, 부모님 에세이 번역, 전학 후 학교 적응을 위한 조언 등 전 과정을 체계적으로 지원합니다.
+                  추천����� 준비, 행정 서류 작성, 부모님 에세이 번역, 전학 후 학교 적응을 위한 조언 등 전 과정을 체계적으로 지원합니다.
                 </p>
               </div>
             </div>

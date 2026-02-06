@@ -10,9 +10,9 @@ export default function ECConsultingPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/images/image.png"
+                src="/images/the-i-logo.png"
                 alt="The-I Prep Logo"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
