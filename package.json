@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@9.12.3",
   "scripts": {
+    "preinstall": "echo '=== PREINSTALL DEBUG START ===' && pwd && ls -la && echo '--- node_modules stat ---' && (stat node_modules || echo 'node_modules does not exist') && echo '--- find node_modules as file ---' && (find . -maxdepth 3 -name node_modules -type f -print || echo 'no node_modules file found') && echo '=== PREINSTALL DEBUG END ==='",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
