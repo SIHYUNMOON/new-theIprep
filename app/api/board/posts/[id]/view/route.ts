@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { incrementViews } from '@/lib/db'
+import { incrementPostViews } from '@/lib/db'
 
 export const runtime = 'nodejs'
 
@@ -10,7 +10,7 @@ export async function POST(
   try {
     const { id } = await params
 
-    const result = await incrementViews(id)
+    const result = await incrementPostViews(id)
 
     if (!result.ok) {
       // Silently fail - view tracking is non-critical
