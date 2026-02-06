@@ -67,6 +67,14 @@ export function Header() {
       ]
     },
     { 
+      label: 'EC컨설팅', 
+      href: '/ec-consulting',
+    },
+    { 
+      label: '정보게시판', 
+      href: '/board',
+    },
+    { 
       label: '상담 및 문의', 
       href: '/contact',
       dropdown: [
