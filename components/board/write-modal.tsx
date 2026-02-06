@@ -86,7 +86,7 @@ export function WriteModal({ isOpen, onClose, onPublish, isLoading }: WriteModal
           </div>
 
           {error && (
-            <div className="p-3 bg-red-50 border border-red-200 rounded text-sm text-red-700">
+            <div className="p-3 bg-destructive/10 border border-destructive/30 rounded text-sm text-destructive">
               {error}
             </div>
           )}
@@ -94,7 +94,7 @@ export function WriteModal({ isOpen, onClose, onPublish, isLoading }: WriteModal
           <div className="flex gap-3 pt-4">
             <Button
               onClick={handlePublish}
-              className="flex-1 bg-red-700 hover:bg-red-800"
+              className="flex-1 bg-primary hover:bg-primary/90"
               disabled={isLoading}
             >
               {isLoading ? '발행 중...' : '발행'}

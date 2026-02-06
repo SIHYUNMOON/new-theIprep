@@ -279,7 +279,7 @@ export function WriteClient() {
 
               {/* Error Message */}
               {error && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">
+                <div className="p-4 bg-destructive/10 border border-destructive/30 rounded-lg text-sm text-destructive">
                   {error}
                 </div>
               )}
@@ -288,7 +288,7 @@ export function WriteClient() {
               <div className="flex gap-3 pt-6">
                 <Button
                   onClick={handlePublish}
-                  className="flex-1 md:flex-none md:min-w-[200px] bg-red-700 hover:bg-red-800 py-6 text-base"
+                  className="flex-1 md:flex-none md:min-w-[200px] bg-primary hover:bg-primary/90 py-6 text-base"
                   disabled={isPublishing}
                 >
                   {isPublishing ? '발행 중...' : '발행'}

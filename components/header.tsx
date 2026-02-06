@@ -196,7 +196,7 @@ export function Header() {
                     onClick={handleBoardLogout}
                     variant="outline"
                     size="lg"
-                    className="text-red-700 border-red-200"
+                    className="text-destructive border-destructive/30"
                   >
                     로그아웃
                   </Button>
@@ -204,6 +204,7 @@ export function Header() {
                   <Button 
                     onClick={() => setShowBoardLogin(true)}
                     size="lg"
+                    className="bg-primary hover:bg-primary/90"
                   >
                     로그인
                   </Button>
@@ -261,7 +262,7 @@ export function Header() {
                       setMobileMenuOpen(false)
                     }}
                     variant="outline"
-                    className="w-full text-red-700 border-red-200"
+                    className="w-full text-destructive border-destructive/30"
                   >
                     로그아웃
                   </Button>
@@ -271,7 +272,7 @@ export function Header() {
                       setShowBoardLogin(true)
                       setMobileMenuOpen(false)
                     }}
-                    className="w-full"
+                    className="w-full bg-primary hover:bg-primary/90"
                   >
                     로그인
                   </Button>

@@ -230,7 +230,7 @@ export function PostViewClient({
             {/* Category Badge */}
             {post.category && (
               <div className="mb-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary">
                   {post.category}
                 </span>
               </div>
@@ -244,7 +244,7 @@ export function PostViewClient({
             {/* Meta */}
             <div className="flex items-center gap-4 pb-6 border-b border-gray-200 mb-8">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
                   {post.author[0]}
                 </div>
                 <span className="text-sm font-medium text-foreground">{post.author}</span>
@@ -290,7 +290,7 @@ export function PostViewClient({
                     variant="outline"
                     size="sm"
                     onClick={() => setShowDeleteDialog(true)}
-                    className="gap-2 text-red-600 hover:text-red-700 hover:bg-red-50"
+                    className="gap-2 text-destructive hover:text-destructive hover:bg-destructive/10"
                   >
                     <Trash2 size={16} />
                     삭제
@@ -331,7 +331,7 @@ export function PostViewClient({
             <AlertDialogAction
               onClick={handleDelete}
               disabled={isDeleting}
-              className="bg-red-600 hover:bg-red-700"
+              className="bg-destructive hover:bg-destructive/90"
             >
               {isDeleting ? '삭제 중...' : '삭제'}
             </AlertDialogAction>

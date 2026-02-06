@@ -54,14 +54,14 @@ export default async function BoardPage() {
             <div className="container mx-auto px-4">
               <div className="flex items-center justify-between h-16">
                 <Link href="/" className="flex items-center gap-2">
-                  <span className="text-xl font-bold text-red-700">인터프렙</span>
+                  <span className="text-xl font-bold text-primary">인터프렙</span>
                 </Link>
                 <nav className="hidden md:flex items-center gap-6">
-                  <Link href="/about" className="text-sm font-medium hover:text-red-700">소개</Link>
-                  <Link href="/sat" className="text-sm font-medium hover:text-red-700">SAT</Link>
-                  <Link href="/toefl" className="text-sm font-medium hover:text-red-700">TOEFL</Link>
-                  <Link href="/board" className="text-sm font-medium text-red-700">게시판</Link>
-                  <Link href="/contact" className="text-sm font-medium hover:text-red-700">연락</Link>
+                  <Link href="/about" className="text-sm font-medium hover:text-primary">소개</Link>
+                  <Link href="/sat" className="text-sm font-medium hover:text-primary">SAT</Link>
+                  <Link href="/toefl" className="text-sm font-medium hover:text-primary">TOEFL</Link>
+                  <Link href="/board" className="text-sm font-medium text-primary">게시판</Link>
+                  <Link href="/contact" className="text-sm font-medium hover:text-primary">연락</Link>
                 </nav>
               </div>
             </div>
@@ -114,8 +114,8 @@ export default async function BoardPage() {
                             <tr key={post.id} className="hover:bg-gray-50/50">
                               <td className="border border-gray-200 px-4 py-3 text-center text-sm text-foreground">{post.id.slice(0, 8)}</td>
                               <td className="border border-gray-200 px-6 py-3 text-sm text-foreground">
-                                <Link href={`/board/${post.id}`} className="flex items-center gap-2 hover:text-red-700">
-                                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800 whitespace-nowrap">
+                                <Link href={`/board/${post.id}`} className="flex items-center gap-2 hover:text-primary">
+                                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary whitespace-nowrap">
                                     {post.category || '인터프렙 소개'}
                                   </span>
                                   <span className="truncate">{post.title}</span>

@@ -225,7 +225,7 @@ export function BoardClient({
                   }}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     selectedCategory === 'all'
-                      ? 'bg-red-700 text-white'
+                      ? 'bg-primary text-primary-foreground'
                       : 'bg-gray-100 text-foreground hover:bg-gray-200'
                   }`}
                 >
@@ -240,7 +240,7 @@ export function BoardClient({
                     }}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       selectedCategory === category
-                        ? 'bg-red-700 text-white'
+                        ? 'bg-primary text-primary-foreground'
                         : 'bg-gray-100 text-foreground hover:bg-gray-200'
                     }`}
                   >
@@ -306,8 +306,8 @@ export function BoardClient({
                           >
                             <td className="border border-gray-200 px-4 py-3 text-center text-sm text-foreground">{post.id.slice(0, 8)}</td>
                             <td className="border border-gray-200 px-6 py-3 text-sm text-foreground">
-                              <Link href={`/board/${post.id}`} className="flex items-center gap-2 hover:text-red-700 transition-colors">
-                                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800 whitespace-nowrap">
+                              <Link href={`/board/${post.id}`} className="flex items-center gap-2 hover:text-primary transition-colors">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary whitespace-nowrap">
                                   {post.category || '인터프렙 소개'}
                                 </span>
                                 <span className="truncate">{post.title}</span>
@@ -357,7 +357,7 @@ export function BoardClient({
                             onClick={() => setCurrentPage(page)}
                             className={`px-3 py-1 rounded text-sm transition-colors ${
                               currentPage === page
-                                ? 'bg-red-700 text-white'
+                                ? 'bg-primary text-primary-foreground'
                                 : 'bg-gray-100 text-foreground hover:bg-gray-200'
                             }`}
                           >
@@ -381,7 +381,7 @@ export function BoardClient({
                 <div className="flex justify-end mt-8">
                   <Button
                     onClick={() => router.push('/board/write')}
-                    className="bg-red-700 hover:bg-red-800 gap-2"
+                    className="bg-primary hover:bg-primary/90 gap-2"
                   >
                     <Plus size={18} />
                     글쓰기

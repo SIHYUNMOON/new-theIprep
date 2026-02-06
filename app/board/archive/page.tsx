@@ -48,7 +48,7 @@ export default async function BoardArchivePage() {
 
             return (
               <li key={post.id} className="flex flex-col gap-1 border-b border-gray-100 pb-3">
-                <a href={`/board/${post.id}`} className="text-base font-medium text-foreground hover:text-red-700">
+                <a href={`/board/${post.id}`} className="text-base font-medium text-foreground hover:text-primary">
                   {post.title}
                 </a>
                 <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
