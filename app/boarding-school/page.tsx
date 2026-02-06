@@ -13,6 +13,7 @@ export default function BoardingSchoolPage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fade-up-active')
+            observer.unobserve(entry.target)
           }
         })
       },
@@ -256,9 +257,9 @@ export default function BoardingSchoolPage() {
           {/* Programs Section */}
           <AnimatedSection className="py-24 px-6 bg-background">
             <div className="container mx-auto max-w-6xl">
-              <div className="text-center mb-12 fade-up">
-                <p className="text-sm font-semibold text-primary/60 uppercase tracking-wider mb-2">Programs</p>
-              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
+                Programs
+              </h2>
               <div className="grid md:grid-cols-3 gap-8">
                 {/* Senior Boarding */}
                 <a href="/senior-boarding" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer">
@@ -520,7 +521,7 @@ export default function BoardingSchoolPage() {
           <div className="container mx-auto max-w-7xl">
             <div className="text-left text-sm space-y-2 opacity-90">
               <p className="leading-relaxed">
-                The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
+                The I Prep | 서울특별시 강��구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
               </p>
               <p className="leading-relaxed">
                 디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455

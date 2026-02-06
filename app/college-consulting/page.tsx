@@ -25,6 +25,7 @@ export default function CollegeConsultingPage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("fade-in-active");
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);

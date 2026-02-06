@@ -12,6 +12,7 @@ export default function TransferPage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fade-up-active')
+            observer.unobserve(entry.target)
           }
         })
       },

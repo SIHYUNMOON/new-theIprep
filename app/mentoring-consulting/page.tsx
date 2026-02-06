@@ -9,6 +9,7 @@ export default function MentoringConsulting() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-up-active')
+          observer.unobserve(entry.target)
         }
       })
     }
@@ -102,14 +103,12 @@ export default function MentoringConsulting() {
             <div className="absolute inset-0 bg-black/30" />
           </div>
 
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl">
-              <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 fade-up">
-                Mentoring
-                <br />
-                Consulting
-              </h1>
-            </div>
+          <div className="relative z-10">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center text-balance">
+              Mentoring
+              <br />
+              Consulting
+            </h1>
           </div>
         </section>
 
@@ -294,7 +293,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>전공별 추���� 캠프, 리서치, 커뮤니티 활동 안내</span>
+                      <span>전공별 추천 캠프, 리서치, 커뮤니티 활동 안내</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
@@ -426,7 +425,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>SAT/ACT/TOEFL/AP 등 주요 시험 대비 일정 �� 준비 전략 제공</span>
+                      <span>SAT/ACT/TOEFL/AP 등 주요 시험 대비 일정 및 준비 전략 제공</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
@@ -452,7 +451,7 @@ export default function MentoringConsulting() {
               The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
             </p>
             <p className="leading-relaxed">
-              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영���록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
+              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
             </p>
             <p className="leading-relaxed">
               입금계좌 | 디아이파트너즈학원<br />
