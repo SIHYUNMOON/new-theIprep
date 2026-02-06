@@ -61,7 +61,7 @@ export default function ECConsultingPage() {
               <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
-              <a href="/#ec" className="hover:text-primary transition-colors">
+              <a href="/ec" className="hover:text-primary transition-colors">
                 EC컨설팅
               </a>
             </div>

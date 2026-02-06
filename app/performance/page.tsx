@@ -68,7 +68,7 @@ export default function AdmissionResultsPage() {
               <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
-              <a href="/#ec" className="hover:text-primary transition-colors">
+              <a href="/ec" className="hover:text-primary transition-colors">
                 EC컨설팅
               </a>
             </div>
@@ -440,7 +440,7 @@ export default function AdmissionResultsPage() {
                     <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                       <div className="text-4xl font-bold text-[rgb(13,37,99)] mb-2">69명</div>
                       <div className="text-sm text-muted-foreground">Top 50 School 합격자</div>
-                      <div className="text-xs text-muted-foreground mt-1">중복합격 기재</div>
+                      <div className="text-xs text-muted-foreground mt-1">중복합��� 기재</div>
                     </div>
                   </div>
 

@@ -185,28 +185,15 @@ export default function ECPage() {
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-primary text-center mb-16 fade-up">
               The-I Prep TV
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="fade-up">
-                <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/dgpRf73dsFo"
-                    title="The-I Prep TV Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-              <div className="fade-up">
-                <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/6kZ1XNO-coE"
-                    title="The-I Prep TV Video 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+            <div className="fade-up max-w-3xl mx-auto">
+              <div className="relative w-full pb-[56.25%] rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/dgpRf73dsFo"
+                  title="The-I Prep TV Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </div>
 

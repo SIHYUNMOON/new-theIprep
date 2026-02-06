@@ -92,7 +92,7 @@ export default function CollegeConsultingPage() {
               <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
-              <a href="/#ec" className="hover:text-primary transition-colors">
+              <a href="/ec" className="hover:text-primary transition-colors">
                 EC컨설팅
               </a>
             </div>
@@ -150,7 +150,7 @@ export default function CollegeConsultingPage() {
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">Personalized Roadmap & Profile Management</p>
                 <p className="text-foreground/80 leading-relaxed">
-                  학생의 학업 성취도, 과외 활동, 관심 분야를 종합적으로 분석하여 최적의 입시 전략을 설계합니다. 학생의 성장 과정에 따라 지속적으로 계획을 수정하�� 조정하여 장기적으로 경쟁력을 갖출 수 있도록 지원합니다.
+                  학생의 학업 성취도, 과외 활동, 관심 분야를 종합적으로 분석하여 최적의 입시 전략을 설계합니다. 학생의 성장 과정에 따라 지속적으로 계획을 수정하���� 조정하여 장기적으로 경쟁력을 갖출 수 있도록 지원합니다.
                 </p>
               </div>
 
@@ -254,7 +254,7 @@ export default function CollegeConsultingPage() {
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">College Selection</p>
                 <ul className="text-foreground/80 leading-relaxed space-y-1 text-sm list-disc list-inside">
-                  <li>학���의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.</li>
+                  <li>학����의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.</li>
                 </ul>
               </div>
 

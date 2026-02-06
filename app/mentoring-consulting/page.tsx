@@ -80,7 +80,7 @@ export default function MentoringConsulting() {
               <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
-              <a href="/#ec" className="hover:text-primary transition-colors">
+              <a href="/ec" className="hover:text-primary transition-colors">
                 EC컨설팅
               </a>
             </div>
@@ -294,7 +294,7 @@ export default function MentoringConsulting() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
-                      <span>전공별 추�� 캠프, 리서치, 커뮤니티 활동 안내</span>
+                      <span>전공별 추���� 캠프, 리서치, 커뮤니티 활동 안내</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[rgb(13,37,99)] mt-1">•</span>
