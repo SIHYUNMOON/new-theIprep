@@ -147,7 +147,7 @@ export default function ECPage() {
               </a>
 
               {/* 미술 */}
-              <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/ec-art" className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer block">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   미술
                 </h3>
@@ -163,7 +163,7 @@ export default function ECPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* KYND */}
               <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
