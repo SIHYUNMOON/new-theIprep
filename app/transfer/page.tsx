@@ -146,7 +146,7 @@ export default function TransferPage() {
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold text-foreground mb-4">맞춤형 접근</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 이를 바탕으로 개별화된 전략을 제공합니다. 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 ���는 맞춤형 계획을 설계합니다. 저희의 맞춤형 전략은 학생들의 강점을 최대한 부각시키고, 경쟁이 치열한 입시 환경에서 돋보일 수 있도록 돕습니다.
+                    저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 이를 바탕으로 개별화된 전략을 제공합니다. 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 �����는 맞춤형 계획을 설계합니다. 저희의 맞춤형 전략은 학생들의 강점을 최대한 부각시키고, 경쟁이 치열한 입시 환경에서 돋보일 수 있도록 돕습니다.
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function TransferPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Program 1 */}
-              <div className="fade-up bg-gradient-to-br from-[#5a6a84] to-[#3d5170] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white">
+              <a href="/transfer-application" className="fade-up bg-gradient-to-br from-[#5a6a84] to-[#3d5170] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white block cursor-pointer">
                 <h3 className="font-serif text-2xl font-semibold mb-6">
                   원서 컨설팅
                 </h3>
@@ -205,7 +205,7 @@ export default function TransferPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* Program 2 */}
               <div className="fade-up bg-gradient-to-br from-[#3d5170] to-[#2c3e5a] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white">
