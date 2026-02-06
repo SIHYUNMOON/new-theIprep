@@ -263,11 +263,28 @@ export async function incrementPostViews(id: string) {
   }
 }
 
-export async function createPost(title: string, contentHtml: string, customDate?: string, category?: string) {
+export async function createPost(data: {
+  title: string;
+  contentHtml: string;
+  customDate?: string;
+  category?: string;
+}): Promise<DbResult<Post>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[v0] Create post failed: DATABASE_URL not defined');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
+  if (shouldSimulateDbFailure()) {
+    console.error('[v0] Create post failed: SIMULATE_DB_FAIL enabled');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
   try {
     await initializeDatabase();
     const sql = getDb();
 
+    const { title, contentHtml, customDate, category } = data;
     const finalCategory = category || '인터프렙 소개';
     
     let result;
@@ -285,17 +302,38 @@ export async function createPost(title: string, contentHtml: string, customDate?
       `;
     }
 
-    return result[0] as Post;
+    const post = result[0] as Post;
+    console.log('[v0] Post created successfully:', post.id);
+    return { ok: true, data: post };
   } catch (error) {
     console.error('[v0] Create post error:', error);
-    throw error;
+    return { ok: false, error: 'db_error' } as const;
   }
 }
 
-export async function updatePost(id: string, title: string, contentHtml: string, customDate?: string, category?: string) {
+export async function updatePost(data: {
+  id: string;
+  title: string;
+  contentHtml: string;
+  customDate?: string;
+  category?: string;
+}): Promise<DbResult<Post>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[v0] Update post failed: DATABASE_URL not defined');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
+  if (shouldSimulateDbFailure()) {
+    console.error('[v0] Update post failed: SIMULATE_DB_FAIL enabled');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
   try {
     await initializeDatabase();
     const sql = getDb();
+
+    const { id, title, contentHtml, customDate, category } = data;
 
     let result;
     if (customDate && category) {
@@ -340,14 +378,32 @@ export async function updatePost(id: string, title: string, contentHtml: string,
       `;
     }
 
-    return result[0] as Post | undefined;
+    if (!result || result.length === 0) {
+      console.error('[v0] Post not found:', id);
+      return { ok: false, error: 'not_found' } as const;
+    }
+
+    const post = result[0] as Post;
+    console.log('[v0] Post updated successfully:', post.id);
+    return { ok: true, data: post };
   } catch (error) {
     console.error('[v0] Update post error:', error);
-    throw error;
+    return { ok: false, error: 'db_error' } as const;
   }
 }
 
-export async function deletePost(id: string) {
+export async function deletePost(id: string): Promise<DbResult<void>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[v0] Delete post failed: DATABASE_URL not defined');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
+  if (shouldSimulateDbFailure()) {
+    console.error('[v0] Delete post failed: SIMULATE_DB_FAIL enabled');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
   try {
     await initializeDatabase();
     const sql = getDb();
@@ -358,7 +414,13 @@ export async function deletePost(id: string) {
       RETURNING id
     `;
 
-    return result.length > 0;
+    if (!result || result.length === 0) {
+      console.error('[v0] Post not found for deletion:', id);
+      return { ok: false, error: 'not_found' } as const;
+    }
+
+    console.log('[v0] Post deleted successfully:', id);
+    return { ok: true, data: undefined };
   } catch (error) {
     console.error('[v0] Delete post error:', error);
     return false;

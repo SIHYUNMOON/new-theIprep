@@ -100,7 +100,13 @@ export async function PUT(
 
     console.log('[v0] Updating post:', id)
 
-    const result = await updatePost(id, body)
+    const result = await updatePost({
+      id,
+      title: body.title,
+      contentHtml: body.contentHtml,
+      customDate: body.customDate,
+      category: body.category,
+    })
 
     if (!result.ok) {
       console.error('[v0] Failed to update post:', result.error)
