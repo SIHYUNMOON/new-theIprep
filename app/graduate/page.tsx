@@ -5,11 +5,7 @@ import { AnimatedSection } from '@/components/animated-section'
 
 export default function GraduatePage() {
   return (
-    <>
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
-      `}</style>
-      <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
         <nav className="container mx-auto px-6 py-4">
@@ -381,7 +377,6 @@ export default function GraduatePage() {
           </div>
         </div>
       </footer>
-      </div>
-    </>
+    </div>
   )
 }

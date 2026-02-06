@@ -26,11 +26,7 @@ export default function TransferPage() {
   }, [])
 
   return (
-    <>
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
-      `}</style>
-      <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -186,7 +182,7 @@ export default function TransferPage() {
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold text-foreground mb-4">맞춤형 접근</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 이를 바탕으로 개별화된 전략을 제공합니다. 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 �����는 맞춤형 계획을 설계합니다. 저희의 맞춤형 전략은 학생들의 강점을 최대한 부각시키고, 경쟁이 치열한 입시 환경에서 돋보일 수 있도록 돕습니다.
+                    저희는 모든 학생이 고유한 배경과 목표를 가지고 있음을 이해하고, 이를 바탕으로 개별화된 전략을 제공합니다. 학생의 학업 성취, 과외 활동, 미래 목표를 철저히 평가한 후, 학생의 필요와 강점에 맞춘 맞춤형 계획을 설계합니다. 저희의 맞춤형 전략은 학생들의 강점을 최대한 부각시키고, 경쟁이 치열한 입시 환경에서 돋보일 수 있도록 돕습니다.
                   </p>
                 </div>
               </div>
@@ -305,7 +301,6 @@ export default function TransferPage() {
           transform: translateY(0);
         }
       `}</style>
-      </div>
-    </>
+    </div>
   )
 }
