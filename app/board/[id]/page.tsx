@@ -1,11 +1,16 @@
 import { getPostById } from '@/lib/db'
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 
 export const revalidate = 60
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-  const post = getPostById(id)
+type Props = {
+  params: Promise<{ id: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params
+  const post = getPostById(resolvedParams.id)
   
   if (!post) {
     return {
@@ -19,9 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   }
 }
 
-export default async function PostDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-  const post = getPostById(id)
+export default async function Page({ params }: Props) {
+  const resolvedParams = await params
+  const post = getPostById(resolvedParams.id)
   
   if (!post) {
     notFound()

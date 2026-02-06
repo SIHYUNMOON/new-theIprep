@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useAuth } from '@/lib/auth-context'
 import { WriteClient } from './write-client'
 
-export default function WritePage() {
+export default function Page() {
   const { isAdmin, isLoading } = useAuth()
   const router = useRouter()
 

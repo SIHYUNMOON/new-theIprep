@@ -8,7 +8,7 @@ export const metadata = {
 
 export const revalidate = 60
 
-export default async function BoardPage() {
+export default async function Page() {
   const { items, totalCount, totalPages } = getPosts('latest', 1, 10)
 
   return (
