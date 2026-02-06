@@ -1,24 +1,26 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import { useEffect } from 'react'
+import Image from 'next/image'
+import { AnimatedSection } from '@/components/animated-section'
 
 export default function TransferPage() {
   useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px',
-    }
+    const fadeUpElements = document.querySelectorAll('.fade-up')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-up-active')
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+      }
+    )
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in')
-        }
-      })
-    }, observerOptions)
-
-    document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el))
+    fadeUpElements.forEach((el) => observer.observe(el))
 
     return () => observer.disconnect()
   }, [])
@@ -91,34 +93,36 @@ export default function TransferPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[30vh] min-h-[200px] flex items-center justify-center overflow-hidden pt-16">
+        <AnimatedSection className="relative min-h-[85vh] flex items-end pt-16">
           <div className="absolute inset-0 z-0">
-            <img
-              src="/images/wave-bg.jpg"
-              alt="Wave Background"
-              className="w-full h-full object-cover"
+            <Image
+              src="/images/boarding-hero.jpg"
+              alt="Transfer Consulting"
+              fill
+              className="object-cover"
+              priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/60" />
+            <div className="absolute inset-0 backdrop-blur-[2px]" style={{ maskImage: 'radial-gradient(ellipse at center, transparent 30%, black 70%)' }} />
           </div>
-          <div className="container mx-auto px-6 relative z-10">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-white text-center mb-4">
-              Transfer Consulting
-            </h1>
+          
+          <div className="container mx-auto px-6 pb-16 relative z-10">
+            <div className="text-white space-y-4 max-w-2xl">
+              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight">
+                Transfer Consulting
+              </h1>
+              <div className="w-20 h-px bg-white/40" />
+              <h2 className="text-xl md:text-2xl font-medium text-balance">
+                미국 명문대학으로 가는 첫 걸음,
+                <br />
+                디아이프렙
+              </h2>
+              <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl">
+                Ivy League 및 상위 20개 대학 합격을 이끈 검증된 성공 기록, 경쟁이 치열한 미국 대학 입시를 위한 탁월한 컨설팅 제공
+              </p>
+            </div>
           </div>
-        </section>
-
-        {/* Intro Section */}
-        <section className="py-16 px-6 bg-white">
-          <div className="container mx-auto max-w-4xl text-center">
-            <div className="w-24 h-1 bg-[rgb(13,37,99)] mx-auto mb-8" />
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              미국 명문대학으로 가는 첫 걸음, 디아이프렙
-            </h2>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              Ivy League 및 상위 20개 대학 합격을 이끈 검증된 성공 기록, 경쟁이 치열한 미국 대학 입시를 위한 탁월한 컨설팅 제공
-            </p>
-          </div>
-        </section>
+        </AnimatedSection>
 
         {/* Why us Section */}
         <section className="py-24 px-6 bg-[rgb(236,236,244)]">
