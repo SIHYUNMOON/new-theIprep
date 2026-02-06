@@ -26,7 +26,11 @@ export default function TransferPage() {
   }, [])
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+      `}</style>
+      <div className="flex flex-col min-h-screen">
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -144,7 +148,7 @@ export default function TransferPage() {
           
           <div className="container mx-auto px-6 pb-16 relative z-10">
             <div className="text-white space-y-4 max-w-2xl">
-              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight">
+              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight" style={{ color: 'rgb(205, 173, 125)' }}>
                 Transfer Consulting
               </h1>
               <div className="w-20 h-px bg-white/40" />
@@ -219,7 +223,7 @@ export default function TransferPage() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Program 1 */}
               <a href="/transfer-application" className="fade-up bg-gradient-to-br from-[#5a6a84] to-[#3d5170] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white block cursor-pointer">
-                <h3 className="font-serif text-2xl font-semibold mb-6">
+                <h3 className="text-2xl font-semibold mb-6" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
                   원서 컨설팅
                 </h3>
                 <div className="space-y-4">
@@ -245,7 +249,7 @@ export default function TransferPage() {
 
               {/* Program 2 */}
               <a href="/transfer-essay" className="fade-up bg-gradient-to-br from-[#3d5170] to-[#2c3e5a] border-none hover:shadow-lg transition-all hover:scale-105 rounded-lg p-8 text-white block cursor-pointer">
-                <h3 className="font-serif text-2xl font-semibold mb-6">
+                <h3 className="text-2xl font-semibold mb-6" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
                   에세이 컨설팅
                 </h3>
                 <div className="space-y-4">
@@ -301,6 +305,7 @@ export default function TransferPage() {
           transform: translateY(0);
         }
       `}</style>
-    </div>
+      </div>
+    </>
   )
 }

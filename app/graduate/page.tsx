@@ -5,7 +5,11 @@ import { AnimatedSection } from '@/components/animated-section'
 
 export default function GraduatePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+      `}</style>
+      <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border/40">
         <nav className="container mx-auto px-6 py-4">
@@ -124,7 +128,7 @@ export default function GraduatePage() {
           
           <div className="container mx-auto px-6 pb-16 relative z-10">
             <div className="text-white space-y-4 max-w-2xl">
-              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight">
+              <h1 className="font-serif text-4xl md:text-5xl font-semibold text-balance leading-tight" style={{ color: 'rgb(205, 173, 125)' }}>
                 Grad Consulting
               </h1>
               <div className="w-20 h-px bg-white/40" />
@@ -212,7 +216,7 @@ export default function GraduatePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Card 1 */}
               <a href="/graduate-application" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer block">
-                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
                   원서 컨설팅
                 </h3>
                 <div className="space-y-3 flex-1">
@@ -236,7 +240,7 @@ export default function GraduatePage() {
 
               {/* Card 2 */}
               <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
-                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
                   교정 서비스
                 </h3>
                 <div className="space-y-3 flex-1">
@@ -267,7 +271,7 @@ export default function GraduatePage() {
 
               {/* Card 3 */}
               <div className="fade-up bg-[rgb(13,37,99)] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
-                <h3 className="font-serif text-2xl font-semibold text-white mb-4">
+                <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: '"Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontWeight: 500 }}>
                   번역 서비스
                 </h3>
                 <div className="space-y-3 flex-1">
@@ -377,6 +381,7 @@ export default function GraduatePage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
