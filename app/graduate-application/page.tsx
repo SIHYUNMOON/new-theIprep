@@ -116,7 +116,7 @@ export default function GraduateApplicationPage() {
                 <span className="text-[rgb(13,37,99)]">Full Consulting</span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Many students prepare for graduate school relying on <span className="text-[rgb(13,37,99)] font-semibold">non-professional advice</span> or undergraduate admission strategies. Simply choosing schools based on alumni background or focusing only on application submission is not sufficient. Successful graduate admissions require an <span className="text-[rgb(13,37,99)] font-semibold">integrated approach</span> including: contact emails, academic fit, school-specific priorities, Korean student acceptance trends, SOP writing, CV (not resume) preparation, recommender selection, and many other variables. Based on <span className="text-[rgb(13,37,99)] font-semibold">over 10 years of experience</span>, The I Prep Graduate Consulting supports applicants from start to finish to ensure successful admission to the most suitable programs.
+                비전문가의 충언 혹은 대학교진학과 같은 방법으로 대학원을 준비하고 있는 것이 많은 학생들의 현실입니다. 단순히 선배 혹은 교수님들의 출신학교들에 의존하여 학교를 선택하거나, 원서준비에만 신경을 쓰는데, 성공적인 대학원 준비는 Contact Email작성부터 시작하여, 전공 적합성, 한국인 학생수용 가능여부, SOP작성, Resume가 아닌 CV작성, 추천인 선택, 및 다양한 변수들이 통합적으로 고려되어야 되는 과정입니다. 디아이프렙 대학원 컨설팅 서비스는 지난 10여년의 경험을 바탕으로 대학원 입시에 시작부터 끝까지 여러분과 함께하며, 지원자들에게 가장 적합한 학교에 성공적으로 진학할 수 있도록 도움을 제공하고 있습니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>
@@ -132,7 +132,7 @@ export default function GraduateApplicationPage() {
                   <span>대학원 리스트 선정 (College Selection)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Build a strategic graduate school list based on the student's CV, including Safety, Target, and Reach programs for balanced and effective applications.
+                  학생의 CV을 바탕으로 최적의 지원 대학원 리스트를 구성합니다. 목표 대학원뿐만 아니라, 안전 지원 (Safety), 적정 지원 (Target), 도전 지원 (Reach)으로 균형 잡힌 리스트를 작성하여 전략적인 지원이 가능하도록 합니다.
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export default function GraduateApplicationPage() {
                   <span>원서 작성 및 검토 (Application Guidance & Review)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Guide application writing according to each program's requirements with thorough review and feedback from an admissions perspective.
+                  학생이 각 대학원의 요구사항에 맞춰 지원서를 작성할 수 있도록 지도하며, 입학 사정관의 시각에서 철저한 검토와 피드백을 제공합니다. 지원서 내용이 일관되며 효과적으로 학생의 강점을 부각할 수 있도록 수정 및 보완합니다.
                 </p>
               </div>
 
@@ -156,7 +156,7 @@ export default function GraduateApplicationPage() {
                   <span>SOP, PS, CV 작성 및 지도 (Essay Writing & Editing)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  The Statement of Purpose (SOP) is the most critical document in U.S. graduate admissions and often determines final outcomes among applicants with similar GPAs and test scores.
+                  미국 대학원 진학에 있어서 가장 중요한 서류는 Statement of Purpose (SOP)입니다. 대부분의 학생들이 비슷한 시험점수, GPA, 경험 등을 가지고 있기 때문에 최종적으로 합격여부를 결정하는 기준은 SOP가 됩니다.
                 </p>
               </div>
 
@@ -168,7 +168,7 @@ export default function GraduateApplicationPage() {
                   <span>기타 입시 관련 서비스 (Additional Admissions Support)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Comprehensive support including recommendation strategy and interview preparation throughout the admissions process.
+                  대학원별 추천서 전략 및 인터뷰 준비까지 포함하여, 입시 전반에서 발생할 수 있는 모든 요소를 지원합니다.
                 </p>
               </div>
             </div>
@@ -177,9 +177,9 @@ export default function GraduateApplicationPage() {
             <div className="bg-white border border-border rounded-lg p-8">
               <h3 className="text-2xl font-semibold text-primary mb-4">Pricing</h3>
               <ul className="space-y-2 text-lg text-foreground/80">
-                <li>- 10 programs: 5,000,000 KRW</li>
-                <li>- 5 programs: 3,000,000 KRW</li>
-                <li>- 1 program: 1,000,000 KRW</li>
+                <li>- 10개 대학원 500만원</li>
+                <li>- 5개 대학원 300만원</li>
+                <li>- 1개 대학원 100만원</li>
               </ul>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function GraduateApplicationPage() {
                 <span className="text-[rgb(13,37,99)]">Full Consulting + Art Portfolio (MFA)</span>
               </h2>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Many MFA applicants rely on <span className="text-[rgb(13,37,99)] font-semibold">informal advice</span> or undergraduate strategies. However, successful MFA admissions require a <span className="text-[rgb(13,37,99)] font-semibold">comprehensive approach</span> including contact emails, academic and artistic fit, SOP and PS writing, artist CV preparation, recommender selection, and portfolio strategy. Based on <span className="text-[rgb(13,37,99)] font-semibold">over 10 years of experience</span>, The I Prep supports applicants from start to finish to ensure successful admission to suitable MFA programs.
+                비전문가의 충언 혹은 대학교진학과 같은 방법으로 대학원을 준비하고 있는 것이 많은 학생들의 현실입니다. 단순히 선배 혹은 교수님들의 출신학교들에 의존하여 학교를 선택하거나, 원서준비에만 신경을 쓰는데, 성공적인 대학원 준비는 Contact Email작성부터 시작하여, 전공 적합성, 한국인 학생수용 가능여부, SOP작성, Resume가 아닌 CV작성, 추천인 선택, 및 다양한 변수들이 통합적으로 고려되어야 되는 과정입니다. 디아이프렙 대학원 컨설팅 서비스는 지난 10여년의 경험을 바탕으로 대학원 입시에 시작부터 끝까지 여러분과 함께하며, 지원자들에게 가장 적합한 학교에 성공적으로 진학할 수 있도록 도움을 제공하고 있습니다.
               </p>
               <div className="w-24 h-px bg-border mt-6" />
             </div>
@@ -214,7 +214,7 @@ export default function GraduateApplicationPage() {
                   <span>아트 포트폴리오 전략 및 피드백 (Art Portfolio Consulting & Review)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Support portfolio development reflecting artistic voice and vision, including work selection, theme development, composition, feedback, and final descriptions.
+                  Artistic voice 및 비전을 반영하는body of work 제출을 위한 포트폴리오 제작을 지원합니다.작품 선정, 주제 개발/설별, 구성 및 피드백을 통해 교수진들에게 강렬한 인상을 줄 수 있는 작품 큐레이팅을 지원하고 작품 설명을 완성합니다.
                 </p>
               </div>
 
@@ -226,7 +226,7 @@ export default function GraduateApplicationPage() {
                   <span>대학원 리스트 선정 (College Selection)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Build a balanced graduate school list based on the student's CV and artistic focus.
+                  학생의 CV을 바탕으로 최적의 지원 대학원 리스트를 구성합니다. 목표 대학원뿐만 아니라, 안전 지원 (Safety), 적정 지원 (Target), 도전 지원 (Reach)으로 균형 잡힌 리스트를 작성하여 전략적인 지원이 가능하도록 합니다.
                 </p>
               </div>
 
@@ -238,7 +238,7 @@ export default function GraduateApplicationPage() {
                   <span>원서 작성 및 검토 (Application Guidance & Review)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Application writing guidance with admissions-level review and feedback tailored to each MFA program.
+                  학생이 각 대학원의 요구사항에 맞춰 지원서를 작성할 수 있도록 지도하며, 입학 사정관의 시각에서 철저한 검토와 피드백을 제공합니다. 지원서 내용이 일관되며 효과적으로 학생의 강점을 부각할 수 있도록 수정 및 보완합니다.
                 </p>
               </div>
 
@@ -250,7 +250,7 @@ export default function GraduateApplicationPage() {
                   <span>SOP, PS, Artist Resume 작성 및 지도 (Essay Writing & Editing)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  SOP and Personal Statement are decisive factors in MFA admissions and are developed with strategic narrative positioning.
+                  미국 예술 대학원 진학에 있어서 가장 중요한 부분중 하나는 Statement of Purpose (SOP)와 Personal Statement(PS)입니다. 대부분의 학생들이 비슷한 시험점수, GPA, 경험 등을 가지고 있기 때문에 최종적으로 합격여부를 결정하는 기준은 SOP가 됩니다.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function GraduateApplicationPage() {
                   <span>기타 입시 관련 서비스 (Additional Admissions Support)</span>
                 </h4>
                 <p className="text-foreground/80 leading-relaxed">
-                  Full support including recommendation strategy and interview preparation for MFA applicants.
+                  대학원별 추천서 전략 및 인터뷰 준비까지 포함하여, 입시 전반에서 발생할 수 있는 모든 요소를 지원합니다.
                 </p>
               </div>
             </div>
@@ -288,10 +288,10 @@ export default function GraduateApplicationPage() {
 
             <div className="bg-white border border-border rounded-lg p-8">
               <ul className="space-y-2 text-lg text-foreground/80">
-                <li>- Statement of Purpose (SOP): 700,000 KRW</li>
-                <li>- Personal Statement (PS): 700,000 KRW</li>
-                <li>- Curriculum Vitae (CV): 200,000 KRW</li>
-                <li>- Contact Email: 200,000 KRW</li>
+                <li>- Statement of Purpose (SOP) 작성 70만원</li>
+                <li>- Personal Statement (PS) 작성 70만원</li>
+                <li>- Curriculum Vitae (CV): 작성 20만원</li>
+                <li>- Contact Email: 작성 20만원</li>
               </ul>
             </div>
           </div>

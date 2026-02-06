@@ -124,7 +124,7 @@ export default function ECPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {/* 아카데믹 */}
-              <div className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
+              <a href="/ec-academic" className="fade-up bg-[#5a6a84] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8 cursor-pointer block">
                 <h3 className="font-serif text-2xl font-semibold text-white mb-4">
                   아카데믹
                 </h3>
@@ -144,7 +144,7 @@ export default function ECPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </a>
 
               {/* 미술 */}
               <div className="fade-up bg-[#3d5170] border-none hover:shadow-lg transition-shadow rounded-lg aspect-square flex flex-col p-8">
