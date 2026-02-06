@@ -72,12 +72,36 @@ export default function GraduatePage() {
                   </div>
                 </div>
               </div>
-              <a href="/graduate" className="hover:text-primary transition-colors">
-                대학원 컨설팅
-              </a>
-              <a href="/ec" className="hover:text-primary transition-colors">
-                EC컨설팅
-              </a>
+              <div className="relative group">
+                <a href="/graduate" className="hover:text-primary transition-colors cursor-pointer">
+                  대학원 컨설팅
+                </a>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/graduate-application" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      원서 컨설팅
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="relative group">
+                <a href="/ec" className="hover:text-primary transition-colors cursor-pointer">
+                  EC컨설팅
+                </a>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/ec-academic" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      아카데믹 컨설팅
+                    </a>
+                    <a href="/ec-art" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      미술 컨설팅
+                    </a>
+                    <a href="/ec-kynd" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      KYND 컨설팅
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
