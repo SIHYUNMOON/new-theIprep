@@ -21,6 +21,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Check auth status on mount and when returning from another page
   useEffect(() => {
+    // Only run in browser
+    if (typeof window === 'undefined') return
+
     // First check localStorage for persisted login state
     const stored = localStorage.getItem('admin_token')
     if (stored) {
@@ -45,18 +48,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setIsAdminLoggedIn(isAdmin)
         
         // If admin is authenticated but token not in localStorage, sync it
-        if (isAdmin && !localStorage.getItem('admin_token')) {
+        if (isAdmin && typeof window !== 'undefined' && !localStorage.getItem('admin_token')) {
           console.log('[v0] Auth status synced with server')
         }
       } else {
         console.log('[v0] Auth check failed, clearing state')
         setIsAdminLoggedIn(false)
-        localStorage.removeItem('admin_token')
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('admin_token')
+        }
       }
     } catch (error) {
       console.error('[v0] Auth check error:', error)
       // Don't clear login state on network errors - maintain localStorage state
-      const stored = localStorage.getItem('admin_token')
+      const stored = typeof window !== 'undefined' ? localStorage.getItem('admin_token') : null
       if (!stored) {
         setIsAdminLoggedIn(false)
       }
@@ -81,8 +86,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const data = await response.json()
       if (data.token) {
         setAuthToken(data.token)
-        localStorage.setItem('admin_token', data.token)
-        console.log('[v0] Auth token stored in localStorage')
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('admin_token', data.token)
+          console.log('[v0] Auth token stored in localStorage')
+        }
       }
 
       setIsAdminLoggedIn(true)
@@ -100,7 +107,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       })
       setIsAdminLoggedIn(false)
       setAuthToken(null)
-      localStorage.removeItem('admin_token')
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('admin_token')
+      }
       return { success: true }
     } catch (error) {
       console.error('[v0] Logout error:', error)
@@ -110,10 +119,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const getAuthToken = () => {
     if (authToken) return authToken
-    const stored = localStorage.getItem('admin_token')
-    if (stored) {
-      setAuthToken(stored)
-      return stored
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('admin_token')
+      if (stored) {
+        setAuthToken(stored)
+        return stored
+      }
     }
     return null
   }
