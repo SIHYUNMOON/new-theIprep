@@ -5,26 +5,12 @@ import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { AnimatedSection } from '@/components/animated-section'
 import { Button } from '@/components/ui/button'
-import { useAuth } from '@/lib/auth-context'
-import { LoginModal } from '@/components/board/login-modal'
 
 export default function Page() {
   const observerRef = useRef<IntersectionObserver | null>(null)
-  const { isAdminLoggedIn, logout, isLoading } = useAuth()
   const [showBoardLogin, setShowBoardLogin] = useState(false)
 
-  console.log('[v0] Page rendering - auth state:', { isAdminLoggedIn, isLoading })
-
-  const handleBoardLogout = async () => {
-    try {
-      const result = await logout()
-      if (result.success) {
-        console.log('[v0] Admin logged out successfully')
-      }
-    } catch (error) {
-      console.error('[v0] Logout error:', error)
-    }
-  }
+  console.log('[v0] Page rendering')
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -146,33 +132,16 @@ export default function Page() {
               <a href="/board" className="hover:text-primary transition-colors">
                 정보게시판
               </a>
-              {!isLoading && (
-                isAdminLoggedIn ? (
-                  <Button 
-                    onClick={handleBoardLogout}
-                    variant="outline"
-                    size="sm"
-                    className="text-destructive border-destructive/30"
-                  >
-                    로그아웃
-                  </Button>
-                ) : (
-                  <Button 
-                    onClick={() => setShowBoardLogin(true)}
-                    size="sm"
-                    className="bg-primary hover:bg-primary/90"
-                  >
-                    로그인
-                  </Button>
-                )
-              )}
+              <Button 
+                onClick={() => setShowBoardLogin(true)}
+                size="sm"
+                className="bg-primary hover:bg-primary/90"
+              >
+                로그인
+              </Button>
             </div>
           </div>
         </nav>
-        <LoginModal 
-          isOpen={showBoardLogin} 
-          onClose={() => setShowBoardLogin(false)} 
-        />
       </header>
 
       {/* Hero Section */}
