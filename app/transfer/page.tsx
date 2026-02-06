@@ -77,9 +77,21 @@ export default function TransferPage() {
                   </div>
                 </div>
               </div>
-              <a href="/transfer" className="hover:text-primary transition-colors">
-                편입 컨설팅
-              </a>
+              <div className="relative group">
+                <a href="/transfer" className="hover:text-primary transition-colors cursor-pointer">
+                  편입 컨설팅
+                </a>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-[rgb(13,37,99)] rounded-lg shadow-lg py-2 min-w-[180px]">
+                    <a href="/transfer-application" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      원서 컨설팅
+                    </a>
+                    <a href="/transfer-essay" className="block px-4 py-2 hover:bg-[rgb(23,47,109)] transition-colors text-white">
+                      에세이 컨설팅
+                    </a>
+                  </div>
+                </div>
+              </div>
               <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
