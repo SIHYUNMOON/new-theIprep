@@ -6,7 +6,7 @@ interface AuthContextType {
   isAdminLoggedIn: boolean
   setIsAdminLoggedIn: (value: boolean) => void
   login: (username: string, password: string) => Promise<void>
-  logout: () => Promise<void>
+  logout: () => Promise<{ success: boolean }>
   checkAuthStatus: () => Promise<void>
   isLoading: boolean
   getAuthToken: () => string | null
@@ -96,8 +96,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setIsAdminLoggedIn(false)
       setAuthToken(null)
       localStorage.removeItem('admin_token')
+      return { success: true }
     } catch (error) {
       console.error('[v0] Logout error:', error)
+      return { success: false }
     }
   }
 

@@ -44,7 +44,7 @@ export function WriteClient() {
 
   const loadCategories = async () => {
     try {
-      const response = await fetch('/api/categories')
+      const response = await fetch('/api/board/categories')
       const data = await response.json()
       
       // Merge default categories with categories from database
@@ -99,7 +99,7 @@ export function WriteClient() {
         headers['Authorization'] = `Bearer ${token}`
       }
 
-      const response = await fetch('/api/posts', {
+      const response = await fetch('/api/board/create', {
         method: 'POST',
         headers,
         body: JSON.stringify({ 

@@ -53,7 +53,7 @@ export function EditClient({ postId }: { postId: string }) {
 
   const loadCategories = async () => {
     try {
-      const response = await fetch('/api/categories')
+      const response = await fetch('/api/board/categories')
       const data = await response.json()
       
       // Merge default categories with categories from database
@@ -72,7 +72,7 @@ export function EditClient({ postId }: { postId: string }) {
 
   const loadPost = async () => {
     try {
-      const response = await fetch(`/api/posts/${postId}`)
+      const response = await fetch(`/api/board/posts/${postId}`)
       if (!response.ok) {
         throw new Error('Failed to fetch post')
       }
@@ -122,7 +122,7 @@ export function EditClient({ postId }: { postId: string }) {
         headers['Authorization'] = `Bearer ${token}`
       }
 
-      const response = await fetch(`/api/posts/${postId}`, {
+      const response = await fetch(`/api/board/posts/${postId}`, {
         method: 'PUT',
         headers,
         body: JSON.stringify({ 

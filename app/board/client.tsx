@@ -72,7 +72,7 @@ export function BoardClient({
 
   const loadCategories = async () => {
     try {
-      const response = await fetch('/api/categories')
+      const response = await fetch('/api/board/categories')
       const data = await response.json()
       
       // Define default categories in order
@@ -123,8 +123,8 @@ export function BoardClient({
       if (selectedCategory !== 'all') {
         params.append('category', selectedCategory)
       }
-      
-      const response = await fetch(`/api/posts?${params}`)
+    
+    const response = await fetch(`/api/board/posts?${params}`)
       if (response.status === 503) {
         setDbUnavailable(true)
         setPosts([])

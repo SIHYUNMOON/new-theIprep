@@ -67,7 +67,7 @@ export function PostViewClient({
     }
 
     viewPingedRef.current[id] = true
-    fetch(`/api/posts/${id}/view`, {
+    fetch(`/api/board/posts/${id}/view`, {
       method: 'POST',
       credentials: 'include',
     }).catch(() => {
@@ -77,7 +77,7 @@ export function PostViewClient({
 
   const loadPost = async () => {
     try {
-      const response = await fetch(`/api/posts/${postId}`)
+      const response = await fetch(`/api/board/posts/${postId}`)
       if (response.status === 503) {
         setErrorType('db_unavailable')
         setPost(null)
@@ -135,7 +135,7 @@ export function PostViewClient({
         headers['Authorization'] = `Bearer ${token}`
       }
 
-      const response = await fetch(`/api/posts/${postId}`, {
+      const response = await fetch(`/api/board/posts/${postId}`, {
         method: 'DELETE',
         headers,
         credentials: 'include',
