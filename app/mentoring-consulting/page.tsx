@@ -77,7 +77,7 @@ export default function MentoringConsulting() {
               <a href="/transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
-              <a href="/#graduate" className="hover:text-primary transition-colors">
+              <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
               <a href="/#ec" className="hover:text-primary transition-colors">
@@ -452,7 +452,7 @@ export default function MentoringConsulting() {
               The I Prep | 서울특별시 강남구 역삼로 424, 진영빌딩 4층 | 4F Jinyoung Building, Yeoksam-ro 424, Gangnam-gu, Seoul
             </p>
             <p className="leading-relaxed">
-              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영등록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
+              디아이파트너즈 | 사업자번호: 224-85-28561 | 학원설립운영���록 제11725호 | EMAIL theipartners@theiprep.com | TEL : 02-6205-5455
             </p>
             <p className="leading-relaxed">
               입금계좌 | 디아이파트너즈학원<br />

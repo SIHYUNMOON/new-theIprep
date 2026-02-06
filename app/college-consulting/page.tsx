@@ -89,7 +89,7 @@ export default function CollegeConsultingPage() {
               <a href="/transfer" className="hover:text-primary transition-colors">
                 편입 컨설팅
               </a>
-              <a href="/#graduate" className="hover:text-primary transition-colors">
+              <a href="/graduate" className="hover:text-primary transition-colors">
                 대학원 컨설팅
               </a>
               <a href="/#ec" className="hover:text-primary transition-colors">
@@ -254,7 +254,7 @@ export default function CollegeConsultingPage() {
                 </h4>
                 <p className="text-sm text-foreground/60 mb-2">College Selection</p>
                 <ul className="text-foreground/80 leading-relaxed space-y-1 text-sm list-disc list-inside">
-                  <li>학생의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.</li>
+                  <li>학���의 학업 성취도와 관심 분야에 맞춰 목표 대학을 설정합니다.</li>
                 </ul>
               </div>
 
