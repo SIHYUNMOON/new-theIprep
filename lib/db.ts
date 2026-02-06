@@ -445,3 +445,35 @@ export async function likePost(id: string) {
     return undefined;
   }
 }
+
+export async function getCategories(): Promise<DbResult<string[]>> {
+  // Check if DATABASE_URL is defined
+  if (!process.env.DATABASE_URL) {
+    console.error('[v0] Get categories failed: DATABASE_URL not defined');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
+  if (shouldSimulateDbFailure()) {
+    console.error('[v0] Get categories failed: SIMULATE_DB_FAIL enabled');
+    return { ok: false, error: 'db_unavailable' } as const;
+  }
+
+  try {
+    await initializeDatabase();
+    const sql = getDb();
+
+    const result = await sql`
+      SELECT DISTINCT category
+      FROM posts
+      WHERE category IS NOT NULL
+      ORDER BY category
+    `;
+
+    const categories = result.map((row: { category: string }) => row.category);
+    console.log('[v0] Successfully fetched categories:', categories.length);
+    return { ok: true, data: categories };
+  } catch (error) {
+    console.error('[v0] Get categories error:', error);
+    return { ok: false, error: 'db_error' } as const;
+  }
+}

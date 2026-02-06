@@ -13,10 +13,16 @@ export default function Page() {
   const { isAdminLoggedIn, logout, isLoading } = useAuth()
   const [showBoardLogin, setShowBoardLogin] = useState(false)
 
+  console.log('[v0] Page rendering - auth state:', { isAdminLoggedIn, isLoading })
+
   const handleBoardLogout = async () => {
-    const result = await logout()
-    if (result.success) {
-      console.log('[v0] Admin logged out successfully')
+    try {
+      const result = await logout()
+      if (result.success) {
+        console.log('[v0] Admin logged out successfully')
+      }
+    } catch (error) {
+      console.error('[v0] Logout error:', error)
     }
   }
 

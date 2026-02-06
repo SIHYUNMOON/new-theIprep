@@ -34,10 +34,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const checkAuthStatus = async () => {
     try {
+      console.log('[v0] Checking auth status...')
       const response = await fetch('/api/auth/me', { credentials: 'include' })
+      console.log('[v0] Auth status response:', response.status)
+      
       if (response.ok) {
         const data = await response.json()
         const isAdmin = data.isAdmin === true
+        console.log('[v0] Auth check result:', { isAdmin })
         setIsAdminLoggedIn(isAdmin)
         
         // If admin is authenticated but token not in localStorage, sync it
@@ -45,6 +49,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           console.log('[v0] Auth status synced with server')
         }
       } else {
+        console.log('[v0] Auth check failed, clearing state')
         setIsAdminLoggedIn(false)
         localStorage.removeItem('admin_token')
       }

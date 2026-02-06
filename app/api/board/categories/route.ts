@@ -1,31 +1,22 @@
 import { NextResponse } from 'next/server'
-import { getDb } from '@/lib/db'
+import { getCategories } from '@/lib/db'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
   try {
-    // Check if DATABASE_URL is defined
-    if (!process.env.DATABASE_URL) {
-      console.log('[v0] DATABASE_URL not defined, returning default categories')
+    console.log('[v0] Fetching categories')
+    
+    const result = await getCategories()
+
+    if (!result.ok) {
+      console.log('[v0] Failed to fetch categories, returning default')
       return NextResponse.json({ categories: [] })
     }
 
-    const sql = getDb()
-
-    const result = await sql`
-      SELECT DISTINCT category 
-      FROM posts 
-      WHERE category IS NOT NULL 
-      ORDER BY category
-    `
-
-    const categories = result.map((row: { category: string }) => row.category)
-
-    console.log('[v0] Fetched categories:', categories.length)
-
-    return NextResponse.json({ categories })
+    console.log('[v0] Successfully fetched categories:', result.data.length)
+    return NextResponse.json({ categories: result.data })
   } catch (error) {
     console.error('[v0] Categories API error:', error)
     // Return empty array on error so the client can use defaults
