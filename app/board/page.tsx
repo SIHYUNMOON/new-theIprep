@@ -2,6 +2,7 @@ import { BoardClient } from './client'
 import { getPosts } from '@/lib/db'
 import Link from 'next/link'
 
+export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 export const metadata = {
   title: '유학 관련 정보 게시판 | 인터프렙',
