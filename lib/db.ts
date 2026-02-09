@@ -291,13 +291,13 @@ export async function createPost(data: {
     if (customDate) {
       result = await sql`
         INSERT INTO posts (title, content_html, author, created_at, category)
-        VALUES (${title}, ${contentHtml}, 'interprep official', ${customDate}, ${finalCategory})
+        VALUES (${title}, ${contentHtml}, 'theiprep official', ${customDate}, ${finalCategory})
         RETURNING *
       `;
     } else {
       result = await sql`
         INSERT INTO posts (title, content_html, author, category)
-        VALUES (${title}, ${contentHtml}, 'interprep official', ${finalCategory})
+        VALUES (${title}, ${contentHtml}, 'theiprep official', ${finalCategory})
         RETURNING *
       `;
     }

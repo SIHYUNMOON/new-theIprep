@@ -283,11 +283,11 @@ export function BoardClient({
                   <table className="w-full border-collapse">
                     <thead>
                       <tr>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-foreground bg-pink-50/50 w-16">번호</th>
-                        <th className="border border-gray-200 px-6 py-3 text-center font-bold text-foreground bg-pink-50/50">제목</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-foreground bg-pink-50/50 w-32">작성자</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-foreground bg-pink-50/50 w-32">작성일</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-foreground bg-pink-50/50 w-20">조회</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-16">번호</th>
+                        <th className="border border-gray-200 px-6 py-3 text-center font-bold text-primary-foreground bg-primary/90">제목</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-32">작성자</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-32">작성일</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-20">조회</th>
                       </tr>
                     </thead>
                     <tbody>
