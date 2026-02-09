@@ -88,14 +88,16 @@ export function BoardClient({
       
       // Define default categories in order
       const defaultCategories = [
-        '인터프렙 소개',
-        '인터프렙 이야기',
-        'US College',
-        '국내수시',
-        'MBA',
-        '인터프렙 프로그램',
-        '유용한 정보',
-        '잉글스토리',
+        '디아이프렙 프로그램',
+        'GPA',
+        'AP',
+        '액티비티 인턴쉽',
+        'SAT ACT Toefl',
+        '추천서',
+        'AdmissionProcess',
+        'Others',
+        'Webinar',
+        '입시트렌드',
       ]
       
       // Merge default categories with categories from database
@@ -110,14 +112,16 @@ export function BoardClient({
       console.error('[v0] Failed to load categories:', error)
       // Fallback to default categories if API fails
       setCategories([
-        '인터프렙 소개',
-        '인터프렙 이야기',
-        'US College',
-        '국내수시',
-        'MBA',
-        '인터프렙 프로그램',
-        '유용한 정보',
-        '잉글스토리',
+        '디아이프렙 프로그램',
+        'GPA',
+        'AP',
+        '액티비티 인턴쉽',
+        'SAT ACT Toefl',
+        '추천서',
+        'AdmissionProcess',
+        'Others',
+        'Webinar',
+        '입시트렌드',
       ])
     }
   }

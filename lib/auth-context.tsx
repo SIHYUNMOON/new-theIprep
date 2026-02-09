@@ -72,6 +72,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = async (username: string, password: string) => {
     try {
+      console.log('[v0] Login attempt:', { username, passwordLength: password.length })
+      
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -79,11 +81,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         credentials: 'include',
       })
 
+      console.log('[v0] Login response status:', response.status)
+
       if (!response.ok) {
-        throw new Error('Login failed')
+        const errorData = await response.json()
+        console.error('[v0] Login failed:', errorData)
+        throw new Error(errorData.error || 'Login failed')
       }
 
       const data = await response.json()
+      console.log('[v0] Login successful, token received:', !!data.token)
+      
       if (data.token) {
         setAuthToken(data.token)
         if (typeof window !== 'undefined') {
