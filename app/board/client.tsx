@@ -30,11 +30,11 @@ interface PaginatedResponse {
 }
 
 const YOUTUBE_VIDEOS = [
-  { title: '그렇게 준비할거면 하지마라! 미국대학입시 제대로 준비하는 법', url: 'https://www.youtube.com/watch?v=NVQm9aaCjw0&feature=youtu.be' },
-  { title: '파일럿이 되고 싶다고? 미국으로 가라!', url: 'https://www.youtube.com/watch?v=WmcTTIUPphU&feature=youtu.be' },
-  { title: '이거 빠뜨리면 반드시 망한다...- 카운셀러 추천서&평가', url: 'https://www.youtube.com/watch?v=1MlWxLB4VbY&feature=youtu.be' },
-  { title: '대한민국 최고 컨설턴트의 미국대학원 진학 꿀팁 왕방출', url: 'https://www.youtube.com/watch?v=Lbjs_O9hNZM' },
-  { title: '미국 탑스쿨에 들어가려면 에세이, 이렇게 쓰세요', url: 'https://www.youtube.com/watch?v=w1McOBjCP6c&feature=youtu.be' },
+  { title: '미국대학 Defer 후 합격 확률 높이는 3단계 전략', url: 'https://www.youtube.com/watch?v=YpXkkr4AqOI&t=11s' },
+  { title: '열정이 스펙을 이긴다! 변화하는 아이비리그 합격 전략', url: 'https://www.youtube.com/watch?v=ACrDbddUT0U&t=896s' },
+  { title: 'AP는 몇 학년부터 어떤 과목을 들어야할까?', url: 'https://www.youtube.com/watch?v=TiEt1sNUc5Q&t=10s' },
+  { title: 'ED와 EA. 우리 아이에게 맞는 전략은?', url: 'https://www.youtube.com/watch?v=DiUge7fl0Ts' },
+  { title: '경쟁률 낮은 전공으로 우회 지원하면 유리할까요?', url: 'https://www.youtube.com/watch?v=ea0pQVTSazI&t=10s' },
 ]
 
 interface BoardClientProps {
@@ -176,10 +176,10 @@ export function BoardClient({
         <AnimatedSection className="py-16 md:py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-2">
-              유학 관련 정보 게시판
+              입시 관련 정보 게시판
             </h1>
             <p className="text-center text-muted-foreground text-sm">
-              최신 유학 정보, 대학 입시 팁, 그리고 유학 준비 가이드를 확인하세요
+              미국 대학 입시 정보, 합격 전략, 그리고 유학 준비 가이드를 확인하세요
             </p>
           </div>
         </AnimatedSection>
@@ -191,8 +191,8 @@ export function BoardClient({
                 <div className="relative w-full bg-black rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/Bia9Zx7NFDE"
-                    title="Interprep YouTube Featured Video"
+                    src="https://www.youtube.com/embed/uRLhkWTFF4s"
+                    title="The I Prep YouTube Featured Video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
@@ -201,7 +201,7 @@ export function BoardClient({
 
               <div className="bg-black rounded-lg p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
-                  Interprep TV - 유학관련 영상 리스트
+                  The I Prep - 입시 전략 영상
                 </h3>
                 <div className="space-y-4">
                   {YOUTUBE_VIDEOS.map((video, idx) => (
