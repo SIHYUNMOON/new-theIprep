@@ -63,15 +63,23 @@ export function PostViewClient({
 
   const pingView = (id: string) => {
     if (viewPingedRef.current[id]) {
+      console.log('[v0] View already pinged in this session for:', id)
       return
     }
 
+    console.log('[v0] Pinging view for post:', id)
     viewPingedRef.current[id] = true
+    
     fetch(`/api/board/posts/${id}/view`, {
       method: 'POST',
       credentials: 'include',
-    }).catch(() => {
-      // Silently fail if view tracking fails
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log('[v0] View ping response:', data)
+    })
+    .catch((err) => {
+      console.error('[v0] View ping failed:', err)
     })
   }
 
