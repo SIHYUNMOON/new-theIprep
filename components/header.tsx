@@ -35,10 +35,10 @@ export function Header() {
               <img
                 src="/images/logo_ke.png"
                 alt="The-I Prep Logo"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </a>
-            <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <div className="hidden lg:flex items-center gap-8 text-base font-medium">
               <a href="/consultants" className="hover:text-primary transition-colors">
                 Our Consultants
               </a>
@@ -85,9 +85,9 @@ export function Header() {
                 isAdminLoggedIn ? (
                   <Button 
                     onClick={handleBoardLogout}
-                    variant="default"
+                    variant="outline"
                     size="sm"
-                    className="bg-primary text-primary-foreground hover:bg-primary/90"
+                    className="bg-white text-primary border-primary hover:bg-primary/5"
                   >
                     로그아웃
                   </Button>
