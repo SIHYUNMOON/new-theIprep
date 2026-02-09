@@ -5,8 +5,8 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 export const metadata = {
-  title: '유학 관련 정보 게시판 | 인터프렙',
-  description: '인터프렙 유학 관련 정보 게시판, 유학 팁, 대학 입시 정보 등을 확인하세요.',
+  title: '입시 관련 정보 게시판 | 디아이프렙',
+  description: '디아이프렙 입시 관련 정보 게시판, 대학 입시 정보, 전략 등을 확인하세요.',
 }
 
 export const revalidate = 60 // Revalidate every 60 seconds
@@ -116,7 +116,7 @@ export default async function BoardPage() {
                               <td className="border border-gray-200 px-6 py-3 text-sm text-foreground">
                                 <Link href={`/board/${post.id}`} className="flex items-center gap-2 hover:text-primary">
                                   <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-primary/10 text-primary whitespace-nowrap">
-                                    {post.category || '인터프렙 소개'}
+                                    {post.category || '디아이프렙 소개'}
                                   </span>
                                   <span className="truncate">{post.title}</span>
                                 </Link>
@@ -149,7 +149,7 @@ export default async function BoardPage() {
           <footer className="bg-muted border-t border-border">
             <div className="container mx-auto px-4 py-8">
               <div className="text-center text-sm text-muted-foreground">
-                <p>ⓒ 2024 인터프렙. All rights reserved.</p>
+                <p>ⓒ 2026 디아이프렙. All rights reserved.</p>
               </div>
             </div>
           </footer>
@@ -157,7 +157,7 @@ export default async function BoardPage() {
       </noscript>
 
       {/* Client component for JS-enabled users (with all interactive features) */}
-      <BoardClient 
+      <BoardClient
         initialPosts={initialPosts}
         initialTotalCount={initialTotalCount}
         initialTotalPages={initialTotalPages}
