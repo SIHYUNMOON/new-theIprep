@@ -33,8 +33,8 @@ export function Header() {
           <div className="flex items-center justify-between">
             <a href="/" className="flex items-center gap-3">
               <img
-                src="/images/logo_ke.png"
-                alt="The-I Prep Logo"
+                src="/images/logo-thei.png"
+                alt="THE-I 디아이"
                 className="h-14 w-auto"
               />
             </a>
