@@ -12,17 +12,23 @@ export async function POST(
 
     // Check if this user has viewed this post within the last 24 hours
     const viewedPostsCookie = request.cookies.get('viewed_posts')?.value || '{}'
+    console.log('[v0] View tracking - Post ID:', id)
+    console.log('[v0] View tracking - Current cookie:', viewedPostsCookie)
+    
     let viewedPosts: Record<string, number> = {}
     
     try {
       viewedPosts = JSON.parse(viewedPostsCookie)
-    } catch {
+    } catch (e) {
+      console.log('[v0] View tracking - Cookie parse error, resetting')
       viewedPosts = {}
     }
 
     const now = Date.now()
     const lastViewed = viewedPosts[id]
     const twentyFourHours = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+
+    console.log('[v0] View tracking - Last viewed:', lastViewed, 'Time since:', lastViewed ? now - lastViewed : 'never')
 
     // Check if viewed within last 24 hours
     if (lastViewed && (now - lastViewed) < twentyFourHours) {

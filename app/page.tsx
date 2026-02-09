@@ -58,7 +58,7 @@ export default function Page() {
               <img
                 src="/images/logo-thei.png"
                 alt="THE-I 디아이"
-                className="h-14 w-auto"
+                className="h-12 w-auto"
               />
             </a>
             <div className="hidden lg:flex items-center gap-8 text-base font-medium">
