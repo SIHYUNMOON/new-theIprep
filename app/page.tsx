@@ -10,7 +10,7 @@ import { LoginModal } from '@/components/board/login-modal'
 
 export default function Page() {
   const observerRef = useRef<IntersectionObserver | null>(null)
-  const { isAdminLoggedIn, logout, isLoading } = useAuth()
+  const { isAdminLoggedIn, logout, isLoading, login } = useAuth()
   const [showBoardLogin, setShowBoardLogin] = useState(false)
 
   const handleBoardLogout = async () => {
@@ -22,6 +22,11 @@ export default function Page() {
     } catch (error) {
       console.error('[v0] Logout error:', error)
     }
+  }
+
+  const handleBoardLogin = async (username: string, password: string) => {
+    await login(username, password)
+    setShowBoardLogin(false)
   }
 
   useEffect(() => {
@@ -124,7 +129,8 @@ export default function Page() {
         </nav>
         <LoginModal 
           isOpen={showBoardLogin} 
-          onClose={() => setShowBoardLogin(false)} 
+          onClose={() => setShowBoardLogin(false)}
+          onLogin={handleBoardLogin}
         />
       </header>
 

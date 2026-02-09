@@ -54,7 +54,7 @@ export default async function BoardPage() {
             <div className="container mx-auto px-4">
               <div className="flex items-center justify-between h-16">
                 <Link href="/" className="flex items-center gap-2">
-                  <span className="text-xl font-bold text-primary">인터프렙</span>
+                  <span className="text-xl font-bold text-primary">디아이프렙</span>
                 </Link>
                 <nav className="hidden md:flex items-center gap-6">
                   <Link href="/about" className="text-sm font-medium hover:text-primary">소개</Link>

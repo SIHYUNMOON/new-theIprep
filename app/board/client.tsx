@@ -44,9 +44,9 @@ interface BoardClientProps {
   initialDbUnavailable?: boolean
 }
 
-export function BoardClient({ 
-  initialPosts = [], 
-  initialTotalCount = 0, 
+export function BoardClient({
+  initialPosts = [],
+  initialTotalCount = 0,
   initialTotalPages = 1,
   initialDbUnavailable = false
 }: BoardClientProps) {
@@ -85,7 +85,7 @@ export function BoardClient({
     try {
       const response = await fetch('/api/board/categories')
       const data = await response.json()
-      
+
       // Define default categories in order
       const defaultCategories = [
         '디아이프렙 프로그램',
@@ -99,14 +99,14 @@ export function BoardClient({
         'Webinar',
         '입시트렌드',
       ]
-      
+
       // Merge default categories with categories from database
       // Remove duplicates and keep the order: defaults first, then additional ones
       const dbCategories = data.categories || []
       const additionalCategories = dbCategories.filter(
         (cat: string) => !defaultCategories.includes(cat)
       )
-      
+
       setCategories([...defaultCategories, ...additionalCategories])
     } catch (error) {
       console.error('[v0] Failed to load categories:', error)
@@ -134,12 +134,12 @@ export function BoardClient({
         page: currentPage.toString(),
         pageSize: '10',
       })
-      
+
       if (selectedCategory !== 'all') {
         params.append('category', selectedCategory)
       }
-    
-    const response = await fetch(`/api/board/posts?${params}`)
+
+      const response = await fetch(`/api/board/posts?${params}`)
       if (response.status === 503) {
         setDbUnavailable(true)
         setPosts([])
@@ -205,7 +205,7 @@ export function BoardClient({
 
               <div className="bg-black rounded-lg p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
-                  The I Prep - 입시 전략 영상
+                  The I Prep TV - 입시 전략 영상
                 </h3>
                 <div className="space-y-4">
                   {YOUTUBE_VIDEOS.map((video, idx) => (
@@ -238,11 +238,10 @@ export function BoardClient({
                     setSelectedCategory('all')
                     setCurrentPage(1)
                   }}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    selectedCategory === 'all'
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === 'all'
                       ? 'bg-primary text-primary-foreground'
                       : 'bg-gray-100 text-foreground hover:bg-gray-200'
-                  }`}
+                    }`}
                 >
                   전체
                 </button>
@@ -253,11 +252,10 @@ export function BoardClient({
                       setSelectedCategory(category)
                       setCurrentPage(1)
                     }}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                      selectedCategory === category
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
                         ? 'bg-primary text-primary-foreground'
                         : 'bg-gray-100 text-foreground hover:bg-gray-200'
-                    }`}
+                      }`}
                   >
                     {category}
                   </button>
@@ -370,11 +368,10 @@ export function BoardClient({
                           {showEllipsis && <span className="px-2 text-gray-400">...</span>}
                           <button
                             onClick={() => setCurrentPage(page)}
-                            className={`px-3 py-1 rounded text-sm transition-colors ${
-                              currentPage === page
+                            className={`px-3 py-1 rounded text-sm transition-colors ${currentPage === page
                                 ? 'bg-primary text-primary-foreground'
                                 : 'bg-gray-100 text-foreground hover:bg-gray-200'
-                            }`}
+                              }`}
                           >
                             {page}
                           </button>

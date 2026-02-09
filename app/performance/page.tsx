@@ -154,7 +154,7 @@ export default function AdmissionResultsPage() {
 
               <div className="bg-black rounded-lg p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
-                  TheIPrep TV - 입시결과 공개
+                  The I Prep TV - 입시결과 공개
                 </h3>
                 <div className="space-y-4">
                   <a
