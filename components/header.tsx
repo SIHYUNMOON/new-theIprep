@@ -85,9 +85,9 @@ export function Header() {
                 isAdminLoggedIn ? (
                   <Button 
                     onClick={handleBoardLogout}
-                    variant="outline"
+                    variant="default"
                     size="sm"
-                    className="text-destructive border-destructive/30"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90"
                   >
                     로그아웃
                   </Button>
