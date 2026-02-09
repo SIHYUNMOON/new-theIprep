@@ -61,7 +61,8 @@ export function BoardClient({
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [categories, setCategories] = useState<string[]>([
     '디아이프렙 프로그램',
-    'GPA AP',
+    'GPA',
+    'AP',
     '액티비티 인턴쉽',
     'SAT ACT Toefl',
     '추천서',
@@ -69,7 +70,6 @@ export function BoardClient({
     'Others',
     'Webinar',
     '입시트렌드',
-    '리서치',
   ])
   const [dbUnavailable, setDbUnavailable] = useState(initialDbUnavailable)
 
@@ -283,11 +283,11 @@ export function BoardClient({
                   <table className="w-full border-collapse">
                     <thead>
                       <tr>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-16">번호</th>
-                        <th className="border border-gray-200 px-6 py-3 text-center font-bold text-primary-foreground bg-primary/90">제목</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-32">작성자</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-32">작성일</th>
-                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary-foreground bg-primary/90 w-20">조회</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary bg-primary/10 w-16">번호</th>
+                        <th className="border border-gray-200 px-6 py-3 text-center font-bold text-primary bg-primary/10">제목</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary bg-primary/10 w-32">작성자</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary bg-primary/10 w-32">작성일</th>
+                        <th className="border border-gray-200 px-4 py-3 text-center font-bold text-primary bg-primary/10 w-20">조회</th>
                       </tr>
                     </thead>
                     <tbody>

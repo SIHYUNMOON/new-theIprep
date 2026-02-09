@@ -15,7 +15,8 @@ import { cn } from '@/lib/utils'
 
 const DEFAULT_CATEGORIES = [
   '디아이프렙 프로그램',
-  'GPA AP',
+  'GPA',
+  'AP',
   '액티비티 인턴쉽',
   'SAT ACT Toefl',
   '추천서',
@@ -23,7 +24,6 @@ const DEFAULT_CATEGORIES = [
   'Others',
   'Webinar',
   '입시트렌드',
-  '리서치',
 ]
 
 interface Post {

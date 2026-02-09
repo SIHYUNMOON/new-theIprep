@@ -33,7 +33,7 @@ export function Header() {
                 className="h-10 w-auto"
               />
             </a>
-            <div className="hidden lg:flex flex-center gap-8 text-sm font-medium">
+            <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
               <div className="relative group">
                 <span className="hover:text-primary transition-colors cursor-pointer">
                   컨설팅 서비스
