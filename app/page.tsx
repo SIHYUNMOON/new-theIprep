@@ -56,7 +56,10 @@ export default function Page() {
                 className="h-10 w-auto"
               />
             </a>
-            <div className="hidden lg:flex flex-center gap-8 text-sm font-medium">
+            <div className="hidden lg:flex items-center gap-8 text-sm font-medium">
+              <a href="/consultants" className="hover:text-primary transition-colors">
+                Our Consultants
+              </a>
               <div className="relative group">
                 <span className="hover:text-primary transition-colors cursor-pointer">
                   컨설팅 서비스
@@ -81,9 +84,6 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <a href="/consultants" className="hover:text-primary transition-colors">
-                Our Consultants
-              </a>
               <div className="relative group">
                 <span className="hover:text-primary transition-colors cursor-pointer">
                   입시 가이드
