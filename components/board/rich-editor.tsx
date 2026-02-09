@@ -84,7 +84,7 @@ export function RichEditor({ value, onChange, placeholder = '내용을 입력하
 
       try {
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append('image', file);
 
         console.log('[v0] Uploading image:', file.name, 'Size:', file.size);
 

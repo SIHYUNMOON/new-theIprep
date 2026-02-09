@@ -59,7 +59,18 @@ export function BoardClient({
   const [isLoadingPosts, setIsLoadingPosts] = useState(false)
   const [totalCount, setTotalCount] = useState(initialTotalCount)
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
-  const [categories, setCategories] = useState<string[]>([])
+  const [categories, setCategories] = useState<string[]>([
+    '디아이프렙 프로그램',
+    'GPA AP',
+    '액티비티 인턴쉽',
+    'SAT ACT Toefl',
+    '추천서',
+    'AdmissionProcess',
+    'Others',
+    'Webinar',
+    '입시트렌드',
+    '리서치',
+  ])
   const [dbUnavailable, setDbUnavailable] = useState(initialDbUnavailable)
 
   useEffect(() => {
